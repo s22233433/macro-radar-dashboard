@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Macro Radar Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="terminal-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Macro Investment Radar</p>
+          <h1>宏觀投資雷達 Dashboard</h1>
+        </div>
+        <div class="status-strip">
+          <span id="reportCount">0 reports</span>
+          <span id="generatedAt">data loading</span>
+          <span id="refreshStatus">static mode</span>
+        </div>
+      </header>
+
+      <main class="dashboard-grid">
+        <section class="overview-panel" aria-label="頂部總覽區">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Latest Read</p>
+              <h2>頂部總覽</h2>
+            </div>
+            <div class="date-badge" id="latestDate">--</div>
+          </div>
+          <div class="overview-grid" id="overviewGrid"></div>
+        </section>
+
+        <section class="decision-panel" aria-label="每日投資決策區">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Daily Conviction Log</p>
+              <h2>每日投資決策</h2>
+            </div>
+            <div class="view-toggle" id="decisionViewToggle" aria-label="切換投資決策視圖"></div>
+          </div>
+          <div class="daily-decision-grid" id="dailyDecisionGrid"></div>
+        </section>
+
+        <aside class="report-list-panel" aria-label="報告列表區">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Reports</p>
+              <h2>報告列表</h2>
+            </div>
+          </div>
+          <div class="report-list" id="reportList"></div>
+        </aside>
+
+        <section class="chart-panel" aria-label="圖表區">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Market Snapshot</p>
+              <h2>市場快照圖表</h2>
+            </div>
+            <div class="chart-actions">
+              <button class="refresh-button" id="manualRefreshButton" type="button" aria-label="刷新市場快照資料">↻</button>
+              <div class="filter-row" id="categoryFilters"></div>
+            </div>
+          </div>
+          <div class="snapshot-cards" id="snapshotCards"></div>
+          <div class="chart-card">
+            <div class="chart-title">
+              <h3>日 / 週 / 月變化與方向判斷</h3>
+              <span id="marketDataStatus">report snapshot</span>
+            </div>
+            <div id="marketMatrix"></div>
+          </div>
+        </section>
+
+        <section class="stance-panel" aria-label="資產立場區">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Positioning</p>
+              <h2>資產立場</h2>
+            </div>
+          </div>
+          <div class="stance-grid" id="stanceGrid"></div>
+        </section>
+
+        <section class="compare-panel" aria-label="最新一期對比前一期">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Delta</p>
+              <h2>最新 vs 前一期</h2>
+            </div>
+          </div>
+          <div id="comparisonCards" class="comparison-grid"></div>
+        </section>
+
+        <section class="events-panel" aria-label="事件雷達區">
+          <div class="section-head compact">
+            <div>
+              <p class="eyebrow">Next 30 Days</p>
+              <h2>事件雷達</h2>
+            </div>
+          </div>
+          <div class="event-timeline" id="eventTimeline"></div>
+        </section>
+
+        <section class="reader-panel" aria-label="報告閱讀區">
+          <div class="section-head reader-head">
+            <div>
+              <p class="eyebrow">Report Reader</p>
+              <h2 id="readerTitle">報告閱讀</h2>
+            </div>
+            <a class="source-link" id="sourceLink" href="#" target="_blank" rel="noreferrer">Open source</a>
+          </div>
+          <article class="markdown-body" id="reportReader"></article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./scripts/report-parser.js"></script>
+    <script src="./data/reports-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
