@@ -72,3 +72,4 @@
 - `2026-07-01`: Dashboard 報告排序改用 `本報告截稿時間`，同日報告時間晚者在前；`每日投資決策` 預設為「日報」流，包含早版 Daily 與晚間 Decision Update，並用早版/晚間版不同標籤顏色區分。
 - `2026-07-01`: `node scripts/build-data.js` 會先刷新 `data/market-daily-k.json`，再重建 `data/reports-data.js`；若 Yahoo 日K暫時抓取失敗，只跳過 K 線更新並保留舊 dashboard data build。
 - `2026-07-01`: Dashboard 的 `每日投資決策` 會從 `第十部分：投資決策` 解析 `assetDecisionMeta`，並在五大資產格子顯示 `量價確認 / 量價未確認 / 量價背離 / 量價缺資料`；舊報告缺少消息面、價格結構、量能欄位時一律顯示 `量價缺資料`。
+- `2026-07-01`: Dashboard 已上傳到獨立 private repo `s22233433/macro-radar-dashboard`；不得推到官網 repo `s22233433/s22233433.github.io`，除非使用者明確要求。
