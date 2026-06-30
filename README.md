@@ -1,5 +1,9 @@
 # 宏觀投資雷達 Dashboard
 
+## 線上網址
+
+https://zhenguocool.com/macro-radar-dashboard/
+
 ## 開啟方式
 
 可以直接打開 `index.html`。這是靜態模式，會讀取已生成的 `data/reports-data.js`。

@@ -73,3 +73,4 @@
 - `2026-07-01`: `node scripts/build-data.js` 會先刷新 `data/market-daily-k.json`，再重建 `data/reports-data.js`；若 Yahoo 日K暫時抓取失敗，只跳過 K 線更新並保留舊 dashboard data build。
 - `2026-07-01`: Dashboard 的 `每日投資決策` 會從 `第十部分：投資決策` 解析 `assetDecisionMeta`，並在五大資產格子顯示 `量價確認 / 量價未確認 / 量價背離 / 量價缺資料`；舊報告缺少消息面、價格結構、量能欄位時一律顯示 `量價缺資料`。
 - `2026-07-01`: Dashboard 已上傳到獨立 private repo `s22233433/macro-radar-dashboard`；不得推到官網 repo `s22233433/s22233433.github.io`，除非使用者明確要求。
+- `2026-07-01`: 為了讓其他裝置可直接瀏覽，`s22233433/macro-radar-dashboard` 已改為 public 並啟用 GitHub Pages；線上網址為 `https://zhenguocool.com/macro-radar-dashboard/`。這是獨立 repo，不覆蓋官網首頁。
