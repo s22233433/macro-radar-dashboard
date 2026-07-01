@@ -141,6 +141,60 @@ assert.equal(report.assetDecisionMeta.jpy.status, "未確認");
 assert.equal(report.assetDecisionMeta.gold.status, "背離");
 assert.equal(report.assetDecisionMeta.japanEquities.status, "缺資料");
 
+const compactReport = parseReport(`# Daily《宏觀投資雷達報告》
+
+日期：2026-07-01
+
+## 先回答七個核心問題
+
+1. 市場主敘事：\`美元與前端利率仍是主軸。\`
+2. 美元 3M：\`偏強。\`
+3. 日圓 3M：\`偏貶。\`
+4. 黃金 3M：\`偏跌。\`
+5. 日股 3M：\`盤整。\`
+6. 美股風險偏好：\`是。\`
+7. 最可能先反轉市場：\`USDJPY。\`
+
+## 第一部分：市場快照
+
+| 指標 | 最新 | 日變化 | 週變化 | 月變化 |
+|---|---:|---:|---:|---:|
+| DXY | 101.24 | +0.12% | -0.17% | +2.35% |
+| USDJPY | 162.66 | +0.45% | +0.65% | +1.89% |
+| Gold | 4,020.0/oz | -0.06% | -2.66% | -11.85% |
+| Nikkei225 | 70,062.32 | +0.86% | -3.17% | +4.67% |
+| S&P500 | 7,499.36 | +0.79% | +1.82% | -1.06% |
+
+## 第十部分：投資決策
+
+- 美元：\`看多\`。消息面：Fed higher-for-longer 未被推翻；價格結構：DXY 仍在 101 上方；量能/替代量能：US2Y 在 4.14%，前端利率確認美元利差；觸發條件：DXY 突破 101.8；失效條件：DXY 跌破 100.8；信心：\`68\`。
+- 日圓：\`看空\`。消息面：BOJ 不足以對沖 Fed 利差；價格結構：USDJPY 升至 162.6，日圓仍弱；量能/替代量能：CFTC 淨空仍高，carry 未 unwind；觸發條件：USDJPY 站穩 162.7；失效條件：USDJPY 跌破 160.8；信心：\`62\`。
+`, "macro-radar-daily-2026-07-01.md");
+
+assert.equal(compactReport.coreQuestions.marketNarrative, "美元與前端利率仍是主軸。");
+assert.equal(compactReport.coreQuestions.usd3m, "偏強。");
+assert.equal(compactReport.coreQuestions.firstReversal, "USDJPY。");
+assert.equal(compactReport.assetDecisionMeta.usd.status, "確認");
+assert.equal(compactReport.assetDecisionMeta.jpy.status, "確認");
+
+const sparseReport = parseReport(`# Daily《宏觀投資雷達報告》
+
+日期：2026-06-30
+
+## 第一部分：市場快照
+
+| 指標 | 最新 | 日變化 | 週變化 | 月變化 |
+|---|---:|---:|---:|---:|
+| DXY | 101.16 | +0.2% | +0.4% | +1.9% |
+
+## 第十部分：投資決策
+
+- 美元：\`看多\`
+`, "macro-radar-daily-2026-06-30.md");
+
+assert.equal(sparseReport.assetDecisionMeta.usd.status, "確認");
+assert.match(sparseReport.assetDecisionMeta.usd.priceStructure, /DXY/);
+
 for (const filename of ["macro-radar-decision-2026-06-30.md", "macro-radar-weekly-2026-06-27.md"]) {
   const typedReport = parseReport(`# Decision Update《宏觀投資雷達》
 

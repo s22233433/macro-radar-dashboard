@@ -109,8 +109,8 @@ function compareReports(a, b) {
 
 function reportSortKey(report) {
   const timestamp = String(report?.markdown || "").match(/本報告截稿時間為\s*`(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})/);
-  if (timestamp) return Number(`${timestamp[1]}${timestamp[2]}${timestamp[3]}${timestamp[4]}${timestamp[5]}`);
   const date = String(report?.date || "").replace(/\D/g, "");
+  if (timestamp) return Number(`${date || `${timestamp[1]}${timestamp[2]}${timestamp[3]}`}${timestamp[4]}${timestamp[5]}`);
   return Number(`${date || "0"}0000`);
 }
 

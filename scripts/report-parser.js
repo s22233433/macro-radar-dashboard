@@ -46,6 +46,13 @@
     "美股": "usEquities",
   };
   const ASSET_KEYS = ["usd", "jpy", "gold", "japanEquities", "usEquities"];
+  const ASSET_PRICE_INDICATORS = {
+    usd: "DXY",
+    jpy: "USDJPY",
+    gold: "Gold",
+    japanEquities: "Nikkei225",
+    usEquities: "S&P500",
+  };
   const DECISION_FIELD_LABELS = ["量價狀態", "量價", "消息面", "價格結構", "量能/替代量能", "替代量能", "量能", "觸發條件", "失效條件", "信心"];
 
   function parseReport(markdown, filename) {
@@ -57,7 +64,7 @@
     const dailyK = extractDailyK(text);
     const events = extractEvents(text);
     const assetStance = extractAssetStance(text);
-    const assetDecisionMeta = extractAssetDecisionMeta(text);
+    const assetDecisionMeta = fillMissingAssetDecisionMeta(extractAssetDecisionMeta(text), assetStance, snapshot);
     const investmentDecision = extractSection(text, "投資決策");
     const summary = coreQuestions.marketNarrative || firstParagraph(text);
 
@@ -95,13 +102,13 @@
     const answers = {};
     if (!section) return defaultCoreQuestions();
 
-    const regex = /(?:^|\n)\s*(\d+)\.\s+([^\n]+)\n([\s\S]*?)(?=\n\s*\d+\.\s+[^\n]+\n|$)/g;
+    const regex = /(?:^|\n)\s*(\d+)\.\s+([\s\S]*?)(?=\n\s*\d+\.\s+|$)/g;
     let match;
     while ((match = regex.exec(section))) {
       const index = Number(match[1]) - 1;
       const key = CORE_KEYS[index];
       if (!key) continue;
-      answers[key] = cleanAnswer(match[3]);
+      answers[key] = cleanCoreAnswer(match[2]);
     }
 
     return Object.assign(defaultCoreQuestions(), answers);
@@ -216,6 +223,47 @@
     return result;
   }
 
+  function fillMissingAssetDecisionMeta(meta, assetStance, snapshot) {
+    for (const key of ASSET_KEYS) {
+      const current = meta[key] || {};
+      if (current.message || current.priceStructure || current.volume) continue;
+      const fallback = fallbackAssetDecisionMeta(key, assetStance?.[key], snapshot);
+      if (fallback) meta[key] = fallback;
+    }
+    return meta;
+  }
+
+  function fallbackAssetDecisionMeta(key, stance, snapshot) {
+    const indicator = ASSET_PRICE_INDICATORS[key];
+    const row = (snapshot || []).find((item) => item.indicator === indicator);
+    const values = [row?.dailyChange, row?.weeklyChange, row?.monthlyChange].filter((value) => Number.isFinite(value));
+    if (!stance || !row || !values.length) return null;
+    const rawDirection = Math.sign(values.find((value) => value !== 0) || 0);
+    const priceDirection = key === "jpy" ? -rawDirection : rawDirection;
+    const stanceDirection = stanceScore(stance);
+    return {
+      message: `第十部分未提供結構化消息面，沿用報告立場：${stance}。`,
+      priceStructure: `${indicator} 日/週/月變化：${row.daily || "--"} / ${row.weekly || "--"} / ${row.monthly || "--"}。`,
+      volume: `以市場快照作替代量能；最新值 ${row.latest || "--"}。`,
+      trigger: "",
+      invalidation: "",
+      confidence: "市場快照回填",
+      status: fallbackStatus(stanceDirection, priceDirection),
+    };
+  }
+
+  function stanceScore(stance) {
+    if (/強烈看多|看多/.test(stance)) return 1;
+    if (/強烈看空|看空/.test(stance)) return -1;
+    return 0;
+  }
+
+  function fallbackStatus(stanceDirection, priceDirection) {
+    if (stanceDirection === 0) return priceDirection === 0 ? "確認" : "未確認";
+    if (priceDirection === 0) return "未確認";
+    return stanceDirection === priceDirection ? "確認" : "背離";
+  }
+
   function defaultAssetDecisionMeta() {
     return ASSET_KEYS.reduce((acc, key) => {
       acc[key] = {
@@ -253,7 +301,7 @@
       if (match) return cleanAnswer(match[1]);
     }
     const allLabels = DECISION_FIELD_LABELS.map(escapeRegExp).join("|");
-    const regex = new RegExp(`(?:^|[\\n；;。])\\s*(?:[-*]\\s*)?(?:${targets})[:：]\\s*([\\s\\S]*?)(?=(?:[\\n；;。]\\s*(?:[-*]\\s*)?(?:${allLabels})[:：])|$)`);
+    const regex = new RegExp(`(?:^|[\\n；;。])\\s*(?:[-*]\\s*)?(?:${targets})[:：]\\s*([\\s\\S]*?)(?=(?:[\\n；;。]\\s*(?:[-*]\\s*)?(?:${allLabels})[:：])|\\n\\s*(?:品質自檢|如果只能持有|##)|$)`);
     const match = regex.exec(block || "");
     return match ? cleanAnswer(match[1]) : "";
   }
@@ -270,10 +318,10 @@
 
   function inferVolumePriceStatus(meta) {
     if (!meta.message || !meta.priceStructure || !meta.volume) return "缺資料";
-    const text = `${meta.message} ${meta.priceStructure} ${meta.volume}`;
+    const text = `${meta.priceStructure} ${meta.volume}`;
     if (/背離|背离|相反|反向|不配合|反而/.test(text)) return "背離";
-    if (/未確認|未确认|不足|不明|等待|尚未|缺乏|未放大|未跟上/.test(text)) return "未確認";
-    if (/確認|确认|同向|配合|放量|站上|突破|跌破|延續|延续/.test(text)) return "確認";
+    if (/未確認|未确认|不足|不明|等待|尚未|缺乏|未放大|未跟上|沒有.*確認|互相抵消/.test(text)) return "未確認";
+    if (/確認|确认|同向|配合|放量|站上|突破|跌破|延續|延续|升至|仍弱|仍強|仍强|上方|下方/.test(text)) return "確認";
     return "未確認";
   }
 
@@ -384,6 +432,17 @@
         .filter(Boolean)
         .join(" ")
     );
+  }
+
+  function cleanCoreAnswer(block) {
+    const lines = String(block || "")
+      .split(/\r?\n/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+    if (!lines.length) return "";
+    const first = lines.shift();
+    const inline = first.match(/^[^:：]{1,40}[:：]\s*(.+)$/);
+    return cleanAnswer([inline ? inline[1] : "", ...lines].filter(Boolean).join(" "));
   }
 
   function cleanInline(value) {

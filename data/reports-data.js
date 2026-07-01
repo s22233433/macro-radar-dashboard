@@ -1,7 +1,407 @@
 window.MACRO_RADAR_DATA = {
-  "generatedAt": "2026-06-30T23:51:08.009Z",
-  "reportCount": 15,
+  "generatedAt": "2026-07-01T00:27:17.945Z",
+  "reportCount": 16,
   "latest": {
+    "filename": "macro-radar-daily-2026-07-01.md",
+    "title": "Daily《宏觀投資雷達報告》",
+    "date": "2026-07-01",
+    "summary": "Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。",
+    "coreQuestions": {
+      "marketNarrative": "Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。",
+      "usd3m": "偏強。DXY 仍在 101 上方，US2Y 回到 4.14%，價格與利差都未否定美元多頭。",
+      "jpy3m": "偏貶。USDJPY 已到 162.6 附近，但因干預風險升高，日圓看空信心不再上調。",
+      "gold3m": "偏跌。金價仍在 4,020 附近弱勢盤整，沒有重新突破，也沒有獲得美元或實質利率確認。",
+      "japanEquities3m": "盤整。Tankan 與 TOPIX 支撐基本面，但 Nikkei 日線未確認新高，且 USDJPY 干預風險限制追多。",
+      "usEquitiesRisk": "是，但仍是集中式 risk-on。Nasdaq100 週線轉強、VIX 回落，支持美股看多但不是全面 beta 擴散。",
+      "firstReversal": "USDJPY。它同時有利差順風、槓桿日圓空頭擁擠與日本官方干預風險。"
+    },
+    "snapshot": [
+      {
+        "indicator": "DXY",
+        "latest": "101.24",
+        "daily": "+0.12%",
+        "weekly": "~-0.17%",
+        "monthly": "~+2.35%",
+        "value": 101.24,
+        "dailyChange": 0.12,
+        "weeklyChange": -0.17,
+        "monthlyChange": 2.35,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "FX"
+      },
+      {
+        "indicator": "USDJPY",
+        "latest": "162.66",
+        "daily": "+0.45%",
+        "weekly": "~+0.65%",
+        "monthly": "~+1.89%",
+        "value": 162.66,
+        "dailyChange": 0.45,
+        "weeklyChange": 0.65,
+        "monthlyChange": 1.89,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "FX"
+      },
+      {
+        "indicator": "EURJPY",
+        "latest": "185.64",
+        "daily": "+0.40%",
+        "weekly": "~+0.95%",
+        "monthly": "~-0.06%",
+        "value": 185.64,
+        "dailyChange": 0.4,
+        "weeklyChange": 0.95,
+        "monthlyChange": -0.06,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "FX"
+      },
+      {
+        "indicator": "US10Y",
+        "latest": "4.44%",
+        "daily": "+6bps",
+        "weekly": "-6bps",
+        "monthly": "-1bp",
+        "value": 4.44,
+        "dailyChange": 6,
+        "weeklyChange": -6,
+        "monthlyChange": -1,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": "",
+        "direction": "up",
+        "category": "Rates"
+      },
+      {
+        "indicator": "US2Y",
+        "latest": "4.14%",
+        "daily": "+4bps",
+        "weekly": "-2bps",
+        "monthly": "+16bps",
+        "value": 4.14,
+        "dailyChange": 4,
+        "weeklyChange": -2,
+        "monthlyChange": 16,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": "bps",
+        "direction": "up",
+        "category": "Rates"
+      },
+      {
+        "indicator": "JP10Y",
+        "latest": "2.64%",
+        "daily": "+3bps",
+        "weekly": "-4bps",
+        "monthly": "-4bps",
+        "value": 2.64,
+        "dailyChange": 3,
+        "weeklyChange": -4,
+        "monthlyChange": -4,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": "bps",
+        "direction": "up",
+        "category": "Rates"
+      },
+      {
+        "indicator": "Gold",
+        "latest": "4,020.0/oz",
+        "daily": "-0.06%",
+        "weekly": "~-2.66%",
+        "monthly": "~-11.85%",
+        "value": 4020,
+        "dailyChange": -0.06,
+        "weeklyChange": -2.66,
+        "monthlyChange": -11.85,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "down",
+        "category": "Commodities"
+      },
+      {
+        "indicator": "Silver",
+        "latest": "58.90/oz",
+        "daily": "+1.24%",
+        "weekly": "~-5.04%",
+        "monthly": "~-22.11%",
+        "value": 58.9,
+        "dailyChange": 1.24,
+        "weeklyChange": -5.04,
+        "monthlyChange": -22.11,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "Commodities"
+      },
+      {
+        "indicator": "Nikkei225",
+        "latest": "70,062.32",
+        "daily": "+0.86%",
+        "weekly": "~-3.17%",
+        "monthly": "~+4.67%",
+        "value": 70062.32,
+        "dailyChange": 0.86,
+        "weeklyChange": -3.17,
+        "monthlyChange": 4.67,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "Equities"
+      },
+      {
+        "indicator": "TOPIX",
+        "latest": "4,028.05",
+        "daily": "+0.83%",
+        "weekly": "~+0.86%",
+        "monthly": "~+2.18%",
+        "value": 4028.05,
+        "dailyChange": 0.83,
+        "weeklyChange": 0.86,
+        "monthlyChange": 2.18,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "Equities"
+      },
+      {
+        "indicator": "S&P500",
+        "latest": "7,499.36",
+        "daily": "+0.79%",
+        "weekly": "~+1.82%",
+        "monthly": "~-1.06%",
+        "value": 7499.36,
+        "dailyChange": 0.79,
+        "weeklyChange": 1.82,
+        "monthlyChange": -1.06,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "Equities"
+      },
+      {
+        "indicator": "Nasdaq100",
+        "latest": "30,276.35",
+        "daily": "+1.68%",
+        "weekly": "~+3.17%",
+        "monthly": "~-0.19%",
+        "value": 30276.35,
+        "dailyChange": 1.68,
+        "weeklyChange": 3.17,
+        "monthlyChange": -0.19,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "up",
+        "category": "Equities"
+      },
+      {
+        "indicator": "VIX",
+        "latest": "16.45",
+        "daily": "-6.80%",
+        "weekly": "~-15.60%",
+        "monthly": "~+7.38%",
+        "value": 16.45,
+        "dailyChange": -6.8,
+        "weeklyChange": -15.6,
+        "monthlyChange": 7.38,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "down",
+        "category": "Volatility"
+      },
+      {
+        "indicator": "WTI",
+        "latest": "70.11/bbl",
+        "daily": "-0.90%",
+        "weekly": "~-4.23%",
+        "monthly": "~-19.75%",
+        "value": 70.11,
+        "dailyChange": -0.9,
+        "weeklyChange": -4.23,
+        "monthlyChange": -19.75,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%",
+        "direction": "down",
+        "category": "Commodities"
+      }
+    ],
+    "dailyK": [
+      {
+        "key": "usd",
+        "indicator": "DXY",
+        "date": "2026-06-30",
+        "open": 101.22,
+        "high": 101.24,
+        "low": 101.22,
+        "close": 101.24
+      },
+      {
+        "key": "jpy",
+        "indicator": "USDJPY",
+        "date": "2026-07-01",
+        "open": 162.55,
+        "high": 162.67,
+        "low": 162.49,
+        "close": 162.66
+      },
+      {
+        "key": "gold",
+        "indicator": "Gold",
+        "date": "2026-06-30",
+        "open": 4025,
+        "high": 4032,
+        "low": 4018.4,
+        "close": 4020
+      },
+      {
+        "key": "japanEquities",
+        "indicator": "Nikkei225",
+        "date": "2026-06-29",
+        "open": 69609.88,
+        "high": 69609.88,
+        "low": 67997.57,
+        "close": 69468.11
+      },
+      {
+        "key": "usEquities",
+        "indicator": "S&P500",
+        "date": "2026-06-30",
+        "open": 7441.27,
+        "high": 7508.29,
+        "low": 7438.04,
+        "close": 7499.36
+      }
+    ],
+    "events": [
+      {
+        "date": "2026-07-01",
+        "event": "Warsh 於 ECB Forum 公開對談；截至截稿尚未落地",
+        "importanceLabel": "⭐⭐",
+        "importance": 2
+      },
+      {
+        "date": "2026-07-01",
+        "event": "美國 6 月 ISM 製造業",
+        "importanceLabel": "⭐⭐",
+        "importance": 2
+      },
+      {
+        "date": "2026-07-02",
+        "event": "美國 6 月 NFP / 失業率 / Employment Situation",
+        "importanceLabel": "⭐⭐⭐",
+        "importance": 3
+      },
+      {
+        "date": "2026-07-08",
+        "event": "FOMC 6 月會議紀要",
+        "importanceLabel": "⭐⭐",
+        "importance": 2
+      },
+      {
+        "date": "2026-07-14",
+        "event": "美國 6 月 CPI",
+        "importanceLabel": "⭐⭐⭐",
+        "importance": 3
+      },
+      {
+        "date": "2026-07-15",
+        "event": "美國 6 月 PPI",
+        "importanceLabel": "⭐⭐",
+        "importance": 2
+      },
+      {
+        "date": "2026-07-24",
+        "event": "日本 6 月全國 CPI",
+        "importanceLabel": "⭐⭐⭐",
+        "importance": 3
+      },
+      {
+        "date": "2026-07-28 至 2026-07-29",
+        "event": "FOMC 會議",
+        "importanceLabel": "⭐⭐⭐",
+        "importance": 3
+      },
+      {
+        "date": "2026-07-30",
+        "event": "BOJ 政策會議與展望報告",
+        "importanceLabel": "⭐⭐⭐",
+        "importance": 3
+      }
+    ],
+    "assetStance": {
+      "usd": "看多",
+      "jpy": "看空",
+      "gold": "看空",
+      "japanEquities": "中性",
+      "usEquities": "看多"
+    },
+    "assetDecisionMeta": {
+      "usd": {
+        "message": "沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據",
+        "priceStructure": "DXY 仍在 101 上方，未跌破美元多頭防線",
+        "volume": "US2Y 在 4.14%，前端利率確認美元利差",
+        "trigger": "DXY 放量突破 101.8 或 NFP 強於預期",
+        "invalidation": "DXY 跌破 100.8 且 US2Y 跌破 4.0%",
+        "confidence": "68。",
+        "status": "確認"
+      },
+      "jpy": {
+        "message": "BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差",
+        "priceStructure": "USDJPY 升至 162.6，日圓仍弱",
+        "volume": "CFTC 槓桿資金仍約 9.7 萬口日圓淨空，carry 未 unwind",
+        "trigger": "USDJPY 站穩 162.7 且無干預升級",
+        "invalidation": "日本官方干預或 USDJPY 單日跌破 160.8",
+        "confidence": "62。",
+        "status": "確認"
+      },
+      "gold": {
+        "message": "美元與前端利率仍壓制黃金",
+        "priceStructure": "金價仍在 4,080-4,100 壓力下方",
+        "volume": "銀價週/月仍弱，沒有貴金屬同步確認",
+        "trigger": "金價跌破 3,990 且 DXY 維持 101 上方",
+        "invalidation": "金價收復 4,100 且 US2Y 明顯下行",
+        "confidence": "64。",
+        "status": "未確認"
+      },
+      "japanEquities": {
+        "message": "Tankan 改善、TOPIX 盤中上行支撐日股",
+        "priceStructure": "TOPIX 偏強，但 Nikkei 完整日線未確認新高",
+        "volume": "USDJPY > 162 支撐出口盈利但也提高干預風險，訊號互相抵消",
+        "trigger": "TOPIX 站穩 4,030 且 Nikkei 完整日線突破 70,500",
+        "invalidation": "USDJPY 急跌或 Nasdaq100 反轉跌破 6/30 低位",
+        "confidence": "60。",
+        "status": "未確認"
+      },
+      "usEquities": {
+        "message": "沒有新數據推翻 growth resilience，AI 主線仍在",
+        "priceStructure": "S&P500 收在 7,499、Nasdaq100 收在 30,276，短線向上",
+        "volume": "VIX 跌至 16.45，波動率確認 risk-on",
+        "trigger": "S&P500 站穩 7,500 且 Nasdaq100 延續強於 S&P500",
+        "invalidation": "NFP/ISM 觸發 growth scare，或 S&P500 跌破 7,400",
+        "confidence": "66。",
+        "status": "確認"
+      }
+    },
+    "investmentDecision": "結論：`美元看多、日圓看空、黃金看空、日股中性、美股看多`。相較前次 Daily 與 Decision Update，主立場不變；新增 Tankan 只強化日股下檔，不足以升級。\n\n- 美元：`看多`。消息面：沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據；價格結構：`DXY` 仍在 `101` 上方，未跌破美元多頭防線；量能/替代量能：`US2Y` 在 `4.14%`，前端利率確認美元利差；觸發條件：`DXY` 放量突破 `101.8` 或 NFP 強於預期；失效條件：`DXY` 跌破 `100.8` 且 `US2Y` 跌破 `4.0%`；信心：`68`。\n- 日圓：`看空`。消息面：BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差；價格結構：`USDJPY` 升至 `162.6`，日圓仍弱；量能/替代量能：CFTC 槓桿資金仍約 `9.7` 萬口日圓淨空，carry 未 unwind；觸發條件：`USDJPY` 站穩 `162.7` 且無干預升級；失效條件：日本官方干預或 `USDJPY` 單日跌破 `160.8`；信心：`62`。\n- 黃金：`看空`。消息面：美元與前端利率仍壓制黃金；價格結構：金價仍在 `4,080-4,100` 壓力下方；量能/替代量能：銀價週/月仍弱，沒有貴金屬同步確認；觸發條件：金價跌破 `3,990` 且 DXY 維持 `101` 上方；失效條件：金價收復 `4,100` 且 `US2Y` 明顯下行；信心：`64`。\n- 日股：`中性`。消息面：Tankan 改善、TOPIX 盤中上行支撐日股；價格結構：TOPIX 偏強，但 Nikkei 完整日線未確認新高；量能/替代量能：`USDJPY > 162` 支撐出口盈利但也提高干預風險，訊號互相抵消；觸發條件：TOPIX 站穩 `4,030` 且 Nikkei 完整日線突破 `70,500`；失效條件：`USDJPY` 急跌或 Nasdaq100 反轉跌破 6/30 低位；信心：`60`。\n- 美股：`看多`。消息面：沒有新數據推翻 growth resilience，AI 主線仍在；價格結構：`S&P500` 收在 `7,499`、`Nasdaq100` 收在 `30,276`，短線向上；量能/替代量能：`VIX` 跌至 `16.45`，波動率確認 risk-on；觸發條件：S&P500 站穩 `7,500` 且 Nasdaq100 延續強於 S&P500；失效條件：NFP/ISM 觸發 growth scare，或 S&P500 跌破 `7,400`；信心：`66`。\n\n品質自檢：\n- 未把尚未公布的 Warsh ECB Forum、ISM、NFP 寫成既成事實。\n- 五大資產均同時檢查消息面、價格結構與量能/替代量能。\n- 截稿時間、資料時點與混合市場日期已列明。\n- Dashboard 必要表格已包含：市場快照、前一交易日日K、投資決策。\n- 最後一句已保留。\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `Fed higher-for-longer 尚未被新資料推翻，US2Y 與 DXY 仍確認利差優勢，而日圓、黃金與日股都受制於干預風險或量價未確認。`",
+    "markdown": "# Daily《宏觀投資雷達報告》\n\n日期：2026-07-01\n時區：Asia/Taipei\n\n註：\n- 本報告截稿時間為 `2026-07-01 08:05 CST`，對應 `2026-07-01 00:05 UTC / 2026-06-30 20:05 EDT / 2026-07-01 09:05 JST`。\n- 本報告優先使用最近 7 天（`2026-06-24` 至 `2026-07-01`）公開可驗證資訊；若沒有足以改變立場的新證據，沿用前次判斷並明確標註。\n- 這是週三亞洲早盤版本。`DXY`、`Gold`、`Silver`、`WTI` 採 Yahoo Finance `2026-06-30` 最新日線；`USDJPY`、`EURJPY` 採 `2026-07-01` 亞洲早盤最新外匯報價；`S&P500`、`Nasdaq100`、`VIX` 採 `2026-06-30` 美國現貨收盤；`US10Y`、`US2Y` 採美國財政部 `2026-06-30` 最新殖利率；`JP10Y` 與文中 `JP2Y` 採日本財務省 `2026-06-29` 最新可得 JGB CSV；`TOPIX` 採 JPX `2026-07-01` 盤中官方值。\n- `Nikkei225` 免費可靠日線仍以 `2026-06-29` 完整收盤為主；同時參考 Yahoo meta 中 `2026-06-30` 的 `70,062.32` 報價，但不把缺少完整 5m 序列的盤中資料硬寫成正式日K。\n- 最近 7 天 Fed 沒有新的 FOMC 或主席級利率路徑訊號；Fed 段落沿用 `2026-06-25` PCE 與 `2026-06-17` FOMC 基準。BOJ 段落新增 `2026-07-01` Tankan：大型製造業 DI 改善、企業匯率假設上修，但仍不構成快速升息訊號。\n\n## 先回答七個核心問題\n\n1. 市場主敘事：`Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。`\n2. 美元 3M：`偏強。DXY 仍在 101 上方，US2Y 回到 4.14%，價格與利差都未否定美元多頭。`\n3. 日圓 3M：`偏貶。USDJPY 已到 162.6 附近，但因干預風險升高，日圓看空信心不再上調。`\n4. 黃金 3M：`偏跌。金價仍在 4,020 附近弱勢盤整，沒有重新突破，也沒有獲得美元或實質利率確認。`\n5. 日股 3M：`盤整。Tankan 與 TOPIX 支撐基本面，但 Nikkei 日線未確認新高，且 USDJPY 干預風險限制追多。`\n6. 美股風險偏好：`是，但仍是集中式 risk-on。Nasdaq100 週線轉強、VIX 回落，支持美股看多但不是全面 beta 擴散。`\n7. 最可能先反轉市場：`USDJPY。它同時有利差順風、槓桿日圓空頭擁擠與日本官方干預風險。`\n\n## 第一部分：市場快照\n\n| 指標 | 最新 | 日變化 | 週變化 | 月變化 |\n|---|---:|---:|---:|---:|\n| DXY | 101.24 | +0.12% | ~-0.17% | ~+2.35% |\n| USDJPY | 162.66 | +0.45% | ~+0.65% | ~+1.89% |\n| EURJPY | 185.64 | +0.40% | ~+0.95% | ~-0.06% |\n| US10Y | 4.44% | +6bps | -6bps | -1bp |\n| US2Y | 4.14% | +4bps | -2bps | +16bps |\n| JP10Y | 2.64% | +3bps | -4bps | -4bps |\n| Gold | 4,020.0/oz | -0.06% | ~-2.66% | ~-11.85% |\n| Silver | 58.90/oz | +1.24% | ~-5.04% | ~-22.11% |\n| Nikkei225 | 70,062.32 | +0.86% | ~-3.17% | ~+4.67% |\n| TOPIX | 4,028.05 | +0.83% | ~+0.86% | ~+2.18% |\n| S&P500 | 7,499.36 | +0.79% | ~+1.82% | ~-1.06% |\n| Nasdaq100 | 30,276.35 | +1.68% | ~+3.17% | ~-0.19% |\n| VIX | 16.45 | -6.80% | ~-15.60% | ~+7.38% |\n| WTI | 70.11/bbl | -0.90% | ~-4.23% | ~-19.75% |\n\n快照解讀：\n- 價格結構沒有推翻前次主線：`DXY > 101`、`US2Y > 4%`、`USDJPY > 162`，美元利差交易仍有效。\n- 美股量價替代訊號改善：`S&P500`、`Nasdaq100` 連續反彈，`VIX` 跌至 `16.45`，支持「集中式 risk-on」。\n- 黃金仍未形成反轉確認；銀價單日反彈，但週/月仍弱，不能單靠單日反彈改成看多。\n\n## 前一交易日日K\n\n| 資產 | 指標 | 日期 | 開盤 | 最高 | 最低 | 收盤 |\n|---|---|---:|---:|---:|---:|---:|\n| 美元 | DXY | 2026-06-30 | 101.22 | 101.24 | 101.22 | 101.24 |\n| 日圓 | USDJPY | 2026-07-01 | 162.55 | 162.67 | 162.49 | 162.66 |\n| 黃金 | Gold | 2026-06-30 | 4,025.0 | 4,032.0 | 4,018.4 | 4,020.0 |\n| 日股 | Nikkei225 | 2026-06-29 | 69,609.88 | 69,609.88 | 67,997.57 | 69,468.11 |\n| 美股 | S&P500 | 2026-06-30 | 7,441.27 | 7,508.29 | 7,438.04 | 7,499.36 |\n\n## 第二部分：資金流向判斷\n\n目前資金流向排序：`美元 > 美股 > 美債 > 日股 > 黃金 > 日圓`。\n\n相較前次判斷，排序不變。原因是新增資料沒有推翻三件事：第一，美元仍有前端利率支撐；第二，美股價格與波動率確認 risk-on；第三，日圓雖然因 162 以上干預風險升高，但價格尚未出現急跌或 carry unwind。\n\n## 第三部分：聯準會分析\n\n最近 7 天足以影響利率路徑的新增資訊有限。Fed 官網最新新聞多為監管與銀行壓力測試，沒有新的 FOMC 決議或主席級政策轉向；最近一個真正影響定價的官方資料仍是 `2026-06-25` BEA PCE。\n\n判斷：沿用前次判斷，未見足以改變立場的新證據。`2026-07-02` NFP 與 `2026-07-08` FOMC 紀要才是下一批可能改變利率路徑的資料。\n\nFed Hawkish Score：`8/10`\n\n理由：`US2Y` 最新在 `4.14%`，市場沒有把 Fed 重新定價成快速降息；但因 NFP 尚未公布，不上調分數。\n\n## 第四部分：日本央行分析\n\n新增資料是 `2026-07-01` BOJ Tankan。大型製造業 DI 從 `17` 升至 `22`，大型非製造業 DI 從 `36` 升至 `37`，大型企業整體 DI 從 `27` 升至 `29`；企業對 FY2026 美元兌日圓假設上修到約 `152.57`，顯示企業已把弱日圓納入預算。\n\n判斷：Tankan 支持 BOJ gradual normalization，但不是快速升息訊號。價格面上 `USDJPY` 仍在 162 以上，代表市場不認為 BOJ 足以單獨逆轉利差。\n\nBOJ Hawkish Score：`7/10`\n\n理由：Tankan 改善讓 BOJ 不需要轉鴿，但東京 CPI 與 Tankan 組合仍不足以把 BOJ 推成連續快速升息。\n\n## 第五部分：黃金分析\n\n沿用前次判斷，未見足以改變立場的新證據。美元仍在 `101` 上方，`US2Y` 仍在 `4%` 上方，黃金最新收在約 `4,020`，低於 6 月中旬高位，價格結構沒有重新轉強。\n\n黃金的利多仍是央行買盤與避險底盤；但量價確認不足，因為價格沒有突破 `4,080-4,100` 壓力，且銀價週/月趨勢仍弱。結論維持未來 3 個月 `偏跌`。\n\n## 第六部分：日圓分析\n\n美日 2 年利差約 `4.14% - 1.41% = 2.73%`；美日 10 年利差約 `4.44% - 2.64% = 1.80%`。利差比前次略偏美元，`USDJPY` 也升到 `162.6` 附近。\n\n未來 3 個月判斷：`貶值`\n\n信心：`62/100`\n\n理由：利差與價格仍支持日圓偏弱；但 `USDJPY > 162` 已進入官方干預敏感區，若出現日本財務省口頭升級或單日急跌，日圓看空需立刻降級。\n\n## 第七部分：Carry Trade 監控\n\n`CFTC Traders in Financial Futures` 最新截至 `2026-06-23`：Leveraged Funds 日圓多單 `90,764` 口、空單 `187,856` 口，淨空約 `97,092` 口。部位仍擁擠，但不是已 unwind。\n\nCarry Trade 風險：`高`\n\n判斷：\n- 部位面：槓桿資金仍大幅淨空日圓。\n- 價格面：`USDJPY` 沒有出現急跌，反而站上 `162`。\n- 風險面：真正的風險不是自然 unwind 已發生，而是官方干預或美國就業數據轉弱觸發短 squeeze。\n\n## 第八部分：日股分析\n\n新增 Tankan 與 JPX TOPIX 盤中值對日股偏正面：大型企業景氣判斷改善，`TOPIX` 盤中約 `4,028`、日漲 `0.83%`。但這仍不足以把日股從中性升級為看多，因為 `Nikkei225` 完整日線未確認新高，且 `USDJPY > 162` 的干預風險會壓抑出口股追價。\n\n未來 3 個月判斷：`盤整`\n\n信心：`60/100`\n\n理由：弱日圓、Tankan 改善與治理改革支撐下檔；但全球 AI 集中交易、BOJ 正常化與干預風險限制上檔。\n\n## 第九部分：風險雷達\n\n| 日期 | 事件 | 重要度 |\n|---|---|---|\n| 2026-07-01 | Warsh 於 ECB Forum 公開對談；截至截稿尚未落地 | ⭐⭐ |\n| 2026-07-01 | 美國 6 月 ISM 製造業 | ⭐⭐ |\n| 2026-07-02 | 美國 6 月 NFP / 失業率 / Employment Situation | ⭐⭐⭐ |\n| 2026-07-08 | FOMC 6 月會議紀要 | ⭐⭐ |\n| 2026-07-14 | 美國 6 月 CPI | ⭐⭐⭐ |\n| 2026-07-15 | 美國 6 月 PPI | ⭐⭐ |\n| 2026-07-24 | 日本 6 月全國 CPI | ⭐⭐⭐ |\n| 2026-07-28 至 2026-07-29 | FOMC 會議 | ⭐⭐⭐ |\n| 2026-07-30 | BOJ 政策會議與展望報告 | ⭐⭐⭐ |\n\n## 第十部分：投資決策\n\n結論：`美元看多、日圓看空、黃金看空、日股中性、美股看多`。相較前次 Daily 與 Decision Update，主立場不變；新增 Tankan 只強化日股下檔，不足以升級。\n\n- 美元：`看多`。消息面：沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據；價格結構：`DXY` 仍在 `101` 上方，未跌破美元多頭防線；量能/替代量能：`US2Y` 在 `4.14%`，前端利率確認美元利差；觸發條件：`DXY` 放量突破 `101.8` 或 NFP 強於預期；失效條件：`DXY` 跌破 `100.8` 且 `US2Y` 跌破 `4.0%`；信心：`68`。\n- 日圓：`看空`。消息面：BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差；價格結構：`USDJPY` 升至 `162.6`，日圓仍弱；量能/替代量能：CFTC 槓桿資金仍約 `9.7` 萬口日圓淨空，carry 未 unwind；觸發條件：`USDJPY` 站穩 `162.7` 且無干預升級；失效條件：日本官方干預或 `USDJPY` 單日跌破 `160.8`；信心：`62`。\n- 黃金：`看空`。消息面：美元與前端利率仍壓制黃金；價格結構：金價仍在 `4,080-4,100` 壓力下方；量能/替代量能：銀價週/月仍弱，沒有貴金屬同步確認；觸發條件：金價跌破 `3,990` 且 DXY 維持 `101` 上方；失效條件：金價收復 `4,100` 且 `US2Y` 明顯下行；信心：`64`。\n- 日股：`中性`。消息面：Tankan 改善、TOPIX 盤中上行支撐日股；價格結構：TOPIX 偏強，但 Nikkei 完整日線未確認新高；量能/替代量能：`USDJPY > 162` 支撐出口盈利但也提高干預風險，訊號互相抵消；觸發條件：TOPIX 站穩 `4,030` 且 Nikkei 完整日線突破 `70,500`；失效條件：`USDJPY` 急跌或 Nasdaq100 反轉跌破 6/30 低位；信心：`60`。\n- 美股：`看多`。消息面：沒有新數據推翻 growth resilience，AI 主線仍在；價格結構：`S&P500` 收在 `7,499`、`Nasdaq100` 收在 `30,276`，短線向上；量能/替代量能：`VIX` 跌至 `16.45`，波動率確認 risk-on；觸發條件：S&P500 站穩 `7,500` 且 Nasdaq100 延續強於 S&P500；失效條件：NFP/ISM 觸發 growth scare，或 S&P500 跌破 `7,400`；信心：`66`。\n\n品質自檢：\n- 未把尚未公布的 Warsh ECB Forum、ISM、NFP 寫成既成事實。\n- 五大資產均同時檢查消息面、價格結構與量能/替代量能。\n- 截稿時間、資料時點與混合市場日期已列明。\n- Dashboard 必要表格已包含：市場快照、前一交易日日K、投資決策。\n- 最後一句已保留。\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `Fed higher-for-longer 尚未被新資料推翻，US2Y 與 DXY 仍確認利差優勢，而日圓、黃金與日股都受制於干預風險或量價未確認。`\n\n## 來源\n\n- [Federal Reserve: FOMC calendars](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)\n- [Federal Reserve: News & Events](https://www.federalreserve.gov/newsevents.htm)\n- [Federal Reserve: Speeches](https://www.federalreserve.gov/newsevents/speeches.htm)\n- [BEA: Personal Income and Outlays, May 2026](https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026)\n- [U.S. Treasury: Daily Treasury Rates CSV](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve)\n- [Bank of Japan: Tankan Summary, June 2026](https://www.boj.or.jp/en/statistics/tk/yoshi/tk2606.htm)\n- [Bank of Japan: Tankan Summary PDF, June 2026](https://www.boj.or.jp/en/statistics/tk/gaiyo/2026/tka2606.pdf)\n- [Ministry of Finance Japan: JGB current CSV](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv)\n- [JPX: Main stock index real-time feed](https://www.jpx.co.jp/market/indices/e_indices_stock_price3.txt)\n- [CFTC: Traders in Financial Futures, Leveraged Funds](https://www.cftc.gov/dea/futures/financial_lf.htm)\n- [Yahoo Finance: Market chart API](https://query1.finance.yahoo.com/v8/finance/chart/)\n"
+  },
+  "previous": {
     "filename": "macro-radar-decision-2026-06-30.md",
     "title": "Decision Update《宏觀投資雷達》",
     "date": "2026-06-30",
@@ -317,455 +717,455 @@ window.MACRO_RADAR_DATA = {
     },
     "assetDecisionMeta": {
       "usd": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
+        "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+        "priceStructure": "DXY 日/週/月變化：-0.26% / ~-0.24% / ~+1.98%。",
+        "volume": "以市場快照作替代量能；最新值 101.16。",
         "trigger": "",
         "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
+        "confidence": "市場快照回填",
+        "status": "背離"
       },
       "jpy": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
+        "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+        "priceStructure": "USDJPY 日/週/月變化：+0.56% / ~+0.56% / ~+1.98%。",
+        "volume": "以市場快照作替代量能；最新值 162.51。",
         "trigger": "",
         "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
+        "confidence": "市場快照回填",
+        "status": "確認"
       },
       "gold": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
+        "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+        "priceStructure": "Gold 日/週/月變化：-0.22% / ~-2.62% / ~-10.13%。",
+        "volume": "以市場快照作替代量能；最新值 4,021.8/oz。",
         "trigger": "",
         "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
+        "confidence": "市場快照回填",
+        "status": "確認"
       },
       "japanEquities": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
+        "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+        "priceStructure": "Nikkei225 日/週/月變化：+0.86% / ~-3.17% / ~+4.67%。",
+        "volume": "以市場快照作替代量能；最新值 70,062.32。",
         "trigger": "",
         "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
+        "confidence": "市場快照回填",
+        "status": "未確認"
       },
       "usEquities": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
+        "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+        "priceStructure": "S&P500 日/週/月變化：+1.82% / ~+1.82% / ~-1.32%。",
+        "volume": "以市場快照作替代量能；最新值 7,499.36。",
         "trigger": "",
         "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
+        "confidence": "市場快照回填",
+        "status": "確認"
       }
     },
     "investmentDecision": "- 美元：`看多`。只要 `DXY` 維持在 `101` 上方、且 `US2Y` 沒有快速跌破 `4%`，主線仍是順勢持有；失效條件是 `NFP / ISM` 明顯轉弱並同步打掉前端利率。\n- 日圓：`看空`。只要 `USDJPY` 仍站在 `160` 上方，日圓仍是 funding currency；失效條件是日本官方干預或美國硬數據突然轉弱，觸發 `USDJPY` 急跌。\n- 黃金：`看空`。只要美元與前端利率不鬆，黃金較像反彈賣點；失效條件是 `DXY` 失守 `100` 或市場轉成真正避險模式。\n- 日股：`中性`。日本仍有弱日圓與全球 risk-on 支撐，但目前不是最乾淨的主線；失效條件是 `USDJPY` 急跌或美股 AI 主線失速。\n- 美股：`看多`。`Nasdaq100` 與 `VIX` 組合仍偏向集中式 risk-on；失效條件是 `ISM / NFP` 顯著低於預期，讓市場把敘事從 growth resilience 切成 growth scare。",
     "markdown": "# Decision Update《宏觀投資雷達》\n\n日期：2026-06-30\n\n- 本報告截稿時間為 `2026-07-01 20:45 CST`，對應 `2026-07-01 08:45 EDT`。\n- 本短報為手動執行版本，日期歸檔於 `2026-06-30`，避免今晚自動化再產生同日重複 decision report。\n- 截至 `2026-07-01 08:45 EDT`，`BLS`、`BEA`、`Census` 官方日程上沒有新的美國 `08:30 ET` 硬數據落地；本短報因此重點更新盤前價格與是否改變早盤主判斷。\n- 本短報相較同日期正式 Daily `macro-radar-daily-2026-06-30.md` 判斷是否改變。\n- `DXY`、`USDJPY`、`EURJPY`、`Gold`、`Silver`、`WTI` 採截稿前最新電子盤或外匯報價；`S&P500`、`Nasdaq100`、`VIX` 採 `2026-06-30` 美國現貨收盤；`US10Y`、`US2Y` 採美國財政部 `2026-06-30` 最新可得殖利率；`JP10Y` 採日本財務省 `2026-06-29` 最新可得 `jgbcme.csv`；`TOPIX` 盤中值採 `JPX` 最新可得，週/月變化以 `1348.T` proxy 近似，故以 `~` 標示；`Nikkei225` 週/月變化亦以最新可得公開日線近似，故以 `~` 標示。\n\n## 先回答七個核心問題\n\n1. 現在市場最主要交易的敘事是什麼？\n   沒有新的美國官方 08:30 硬數據推翻主線，市場仍在交易 Warsh Fed 的 higher-for-longer，加上 AI 主導的 selective risk-on。\n\n2. 美元接下來 3 個月偏強還偏弱？\n   偏強。利差優勢到 `2026-07-01 08:45 EDT` 仍沒被新的硬數據破壞。\n\n3. 日圓接下來 3 個月偏升還偏貶？\n   偏貶。`USD/JPY` 已重新站上 `162` 附近，carry 主線仍在。\n\n4. 黃金接下來 3 個月偏漲還偏跌？\n   偏跌。強美元與高前端利率仍壓著黃金的短線定價權。\n\n5. 日股接下來 3 個月偏漲還偏跌？\n   偏盤整。日本股市仍有韌性，但現在還不足以單獨改寫美元主線。\n\n6. 美股是否處於風險偏好階段？\n   是，但仍是集中式、不是全面擴散式的 risk-on。\n\n7. 哪個市場最可能率先出現趨勢反轉？\n   `USD/JPY`。因為它同時承載利差、官方干預與擁擠 carry 部位。\n\n## 第一部分：市場快照\n\n| 指標 | 最新 | 日變化 | 週變化 | 月變化 |\n|---|---:|---:|---:|---:|\n| DXY | 101.16 | -0.26% | ~-0.24% | ~+1.98% |\n| USDJPY | 162.51 | +0.56% | ~+0.56% | ~+1.98% |\n| EURJPY | 185.66 | +0.97% | ~+0.97% | ~+0.02% |\n| US10Y | 4.44% | +6bps | 0bps | -8bps |\n| US2Y | 4.14% | +4bps | -10bps | +12bps |\n| JP10Y | 2.64% | +3bps | -4bps | -4bps |\n| Gold | 4,021.8/oz | -0.22% | ~-2.62% | ~-10.13% |\n| Silver | 59.04/oz | +1.19% | ~-4.80% | ~-21.28% |\n| Nikkei225 | 70,062.32 | +0.86% | ~-3.17% | ~+4.67% |\n| TOPIX | 3,994.76 | +0.32% | ~+0.86% | ~+2.18% |\n| S&P500 | 7,499.36 | +1.82% | ~+1.82% | ~-1.32% |\n| Nasdaq100 | 30,276.35 | +3.17% | ~+3.17% | ~-0.78% |\n| VIX | 16.45 | -11.70% | ~-15.60% | ~+2.49% |\n| WTI | 70.03/bbl | -2.63% | ~-4.34% | ~-24.01% |\n\n快照解讀：\n- 沒有新的官方美國硬數據，但價格本身已經給答案：`DXY > 101`、`USDJPY > 162`、`Gold` 偏弱，代表美元主線仍在。\n- 同時 `S&P500`、`Nasdaq100` 與 `VIX` 的組合仍是典型 selective risk-on，表示市場沒有轉向全面避險。\n- `Nikkei225` 與 `TOPIX` 仍有韌性，但這更像全球風險偏好延續，不是足以單獨扭轉美元/日圓主線的新證據。\n\n## 前一交易日日K\n\n| 資產 | 指標 | 日期 | 開盤 | 最高 | 最低 | 收盤 |\n|---|---|---:|---:|---:|---:|---:|\n| 美元 | DXY | 2026-06-30 | 101.12 | 101.43 | 101.05 | 101.16 |\n| 日圓 | USDJPY | 2026-06-30 | 161.87 | 162.67 | 161.83 | 162.51 |\n| 黃金 | Gold | 2026-06-30 | 4032.5 | 4078.1 | 3955.4 | 4021.8 |\n| 日股 | Nikkei225 | 2026-06-30 | 69468.11 | 70280.54 | 69169.63 | 70062.32 |\n| 美股 | S&P500 | 2026-06-30 | 7441.27 | 7508.29 | 7438.04 | 7499.36 |\n\n## 第二部分：今日決策是否改變\n\n主判斷：`維持`\n\n原因：\n1. `2026-07-01 08:45 EDT` 前沒有新的美國官方 `08:30` 硬數據衝擊，下一個真正的硬催化仍是 `2026-07-02` 的 `NFP`。\n2. 跨資產價格仍與 `2026-06-30` Daily 同方向：`美元強、日圓弱、黃金弱、美股偏 risk-on`。\n3. 日本股市韌性與 `TOPIX` 小漲只夠支持「日股不弱」，還不夠把整體主線從美元轉走。\n\n## 第三部分：可執行投資決策\n\n- 美元：`看多`。只要 `DXY` 維持在 `101` 上方、且 `US2Y` 沒有快速跌破 `4%`，主線仍是順勢持有；失效條件是 `NFP / ISM` 明顯轉弱並同步打掉前端利率。\n- 日圓：`看空`。只要 `USDJPY` 仍站在 `160` 上方，日圓仍是 funding currency；失效條件是日本官方干預或美國硬數據突然轉弱，觸發 `USDJPY` 急跌。\n- 黃金：`看空`。只要美元與前端利率不鬆，黃金較像反彈賣點；失效條件是 `DXY` 失守 `100` 或市場轉成真正避險模式。\n- 日股：`中性`。日本仍有弱日圓與全球 risk-on 支撐，但目前不是最乾淨的主線；失效條件是 `USDJPY` 急跌或美股 AI 主線失速。\n- 美股：`看多`。`Nasdaq100` 與 `VIX` 組合仍偏向集中式 risk-on；失效條件是 `ISM / NFP` 顯著低於預期，讓市場把敘事從 growth resilience 切成 growth scare。\n\n## 第四部分：未來 24-72 小時風險雷達\n\n| 日期 | 事件 | 重要度 |\n|---|---|---|\n| 2026-07-01 | 美國 6 月 ISM 製造業與 5 月營建支出 | ⭐⭐ |\n| 2026-07-02 | 美國 6 月 NFP / 失業率 / Employment Situation | ⭐⭐⭐ |\n| 2026-07-02 | 美國 5 月工廠訂單 | ⭐ |\n\n## 第十部分：投資決策\n\n- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`看多`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `截至 2026-07-01 08:45 EDT，沒有新的美國官方硬數據打掉 Warsh Fed 的 higher-for-longer 與利差優勢，而價格本身仍明確站在美元這一邊。`\n\n## 來源\n\n- [BLS: Schedule of Selected Releases for 2026](https://www.bls.gov/schedule/news_release/current_year.htm)\n- [BLS: Employment Situation release schedule](https://www.bls.gov/schedule/news_release/empsit.htm)\n- [BEA: News Release Schedule](https://www.bea.gov/news/schedule)\n- [U.S. Census Bureau: Economic Indicators Calendar](https://www.census.gov/economic-indicators/calendar)\n- [Federal Reserve: FOMC calendars](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)\n- [U.S. Treasury: Daily Treasury Par Yield Curve Rates](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve)\n- [Ministry of Finance Japan: JGB current CSV](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv)\n- [JPX: Main stock index real-time feed](https://www.jpx.co.jp/market/indices/e_indices_stock_price3.txt)\n- [FRED: Nikkei Stock Average, Japan](https://fred.stlouisfed.org/series/NIKKEI225)\n- [Yahoo Finance: U.S. Dollar Index](https://finance.yahoo.com/quote/DX-Y.NYB/)\n- [Yahoo Finance: USD/JPY](https://finance.yahoo.com/quote/JPY%3DX/)\n- [Yahoo Finance: EUR/JPY](https://finance.yahoo.com/quote/EURJPY%3DX/)\n- [Yahoo Finance: Gold Futures](https://finance.yahoo.com/quote/GC%3DF/)\n- [Yahoo Finance: Silver Futures](https://finance.yahoo.com/quote/SI%3DF/)\n- [Yahoo Finance: S&P 500](https://finance.yahoo.com/quote/%5EGSPC/)\n- [Yahoo Finance: Nasdaq 100](https://finance.yahoo.com/quote/%5ENDX/)\n- [Yahoo Finance: CBOE Volatility Index](https://finance.yahoo.com/quote/%5EVIX/)\n- [Yahoo Finance: WTI Crude Oil Futures](https://finance.yahoo.com/quote/CL%3DF/)\n"
   },
-  "previous": {
-    "filename": "macro-radar-daily-2026-06-30.md",
-    "title": "Daily《宏觀投資雷達報告》",
-    "date": "2026-06-30",
-    "summary": "現在最主要被交易的敘事，是「5 月 PCE 讓 Warsh Fed 的 higher-for-longer 繼續成立，美元主線沒有被破壞；但美股在上週去擁擠後出現選擇性反彈，顯示風險偏好沒有消失，只是更集中在能承受高利率的美國大型股，而日圓仍繼續扮演 funding currency。」",
-    "coreQuestions": {
-      "marketNarrative": "現在最主要被交易的敘事，是「5 月 PCE 讓 Warsh Fed 的 higher-for-longer 繼續成立，美元主線沒有被破壞；但美股在上週去擁擠後出現選擇性反彈，顯示風險偏好沒有消失，只是更集中在能承受高利率的美國大型股，而日圓仍繼續扮演 funding currency。」",
-      "usd3m": "偏強。",
-      "jpy3m": "偏貶。",
-      "gold3m": "偏跌。",
-      "japanEquities3m": "偏盤整。",
-      "usEquitiesRisk": "是，但屬於窄幅、選擇性的 risk-on，不是全面擴散式風險偏好。",
-      "firstReversal": "USD/JPY，因為它同時承載美日利差、日本官方干預風險，以及槓桿資金偏擁擠的日圓空頭。"
-    },
-    "snapshot": [
-      {
-        "indicator": "DXY",
-        "latest": "101.16",
-        "daily": "-0.20%",
-        "weekly": "~+0.13%",
-        "monthly": "~+2.27%",
-        "value": 101.16,
-        "dailyChange": -0.2,
-        "weeklyChange": 0.13,
-        "monthlyChange": 2.27,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "down",
-        "category": "FX"
-      },
-      {
-        "indicator": "USDJPY",
-        "latest": "161.94",
-        "daily": "+0.10%",
-        "weekly": "~+0.23%",
-        "monthly": "~+1.45%",
-        "value": 161.94,
-        "dailyChange": 0.1,
-        "weeklyChange": 0.23,
-        "monthlyChange": 1.45,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "FX"
-      },
-      {
-        "indicator": "EURJPY",
-        "latest": "184.91",
-        "daily": "+0.39%",
-        "weekly": "~+0.16%",
-        "monthly": "~-0.45%",
-        "value": 184.91,
-        "dailyChange": 0.39,
-        "weeklyChange": 0.16,
-        "monthlyChange": -0.45,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "FX"
-      },
-      {
-        "indicator": "US10Y",
-        "latest": "4.38%",
-        "daily": "0bps",
-        "weekly": "-13bps",
-        "monthly": "-7bps",
-        "value": 4.38,
-        "dailyChange": 0,
-        "weeklyChange": -13,
-        "monthlyChange": -7,
-        "dailyUnit": "bps",
-        "weeklyUnit": "bps",
-        "monthlyUnit": "bps",
-        "direction": "flat",
-        "category": "Rates"
-      },
-      {
-        "indicator": "US2Y",
-        "latest": "4.10%",
-        "daily": "+3bps",
-        "weekly": "-14bps",
-        "monthly": "+12bps",
-        "value": 4.1,
-        "dailyChange": 3,
-        "weeklyChange": -14,
-        "monthlyChange": 12,
-        "dailyUnit": "bps",
-        "weeklyUnit": "bps",
-        "monthlyUnit": "bps",
-        "direction": "up",
-        "category": "Rates"
-      },
-      {
-        "indicator": "JP10Y",
-        "latest": "2.61%",
-        "daily": "-3bps",
-        "weekly": "-7bps",
-        "monthly": "-5bps",
-        "value": 2.61,
-        "dailyChange": -3,
-        "weeklyChange": -7,
-        "monthlyChange": -5,
-        "dailyUnit": "bps",
-        "weeklyUnit": "bps",
-        "monthlyUnit": "bps",
-        "direction": "down",
-        "category": "Rates"
-      },
-      {
-        "indicator": "Gold",
-        "latest": "4,028/oz",
-        "daily": "-1.24%",
-        "weekly": "~-3.68%",
-        "monthly": "~-11.67%",
-        "value": 4028,
-        "dailyChange": -1.24,
-        "weeklyChange": -3.68,
-        "monthlyChange": -11.67,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "down",
-        "category": "Commodities"
-      },
-      {
-        "indicator": "Silver",
-        "latest": "58.84/oz",
-        "daily": "-0.65%",
-        "weekly": "~-10.21%",
-        "monthly": "~-22.19%",
-        "value": 58.84,
-        "dailyChange": -0.65,
-        "weeklyChange": -10.21,
-        "monthlyChange": -22.19,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "down",
-        "category": "Commodities"
-      },
-      {
-        "indicator": "Nikkei225",
-        "latest": "69,468.11",
-        "daily": "+0.15%",
-        "weekly": "~-3.99%",
-        "monthly": "~+3.79%",
-        "value": 69468.11,
-        "dailyChange": 0.15,
-        "weeklyChange": -3.99,
-        "monthlyChange": 3.79,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "Equities"
-      },
-      {
-        "indicator": "TOPIX",
-        "latest": "4,008.43",
-        "daily": "+0.66%",
-        "weekly": "~-2.61%",
-        "monthly": "~+1.36%",
-        "value": 4008.43,
-        "dailyChange": 0.66,
-        "weeklyChange": -2.61,
-        "monthlyChange": 1.36,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "Equities"
-      },
-      {
-        "indicator": "S&P500",
-        "latest": "7,440.43",
-        "daily": "+1.18%",
-        "weekly": "~-0.43%",
-        "monthly": "~-1.84%",
-        "value": 7440.43,
-        "dailyChange": 1.18,
-        "weeklyChange": -0.43,
-        "monthlyChange": -1.84,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "Equities"
-      },
-      {
-        "indicator": "Nasdaq100",
-        "latest": "29,774.75",
-        "daily": "+2.25%",
-        "weekly": "~-1.89%",
-        "monthly": "~-1.84%",
-        "value": 29774.75,
-        "dailyChange": 2.25,
-        "weeklyChange": -1.89,
-        "monthlyChange": -1.84,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "Equities"
-      },
-      {
-        "indicator": "VIX",
-        "latest": "17.65",
-        "daily": "-4.13%",
-        "weekly": "~+2.14%",
-        "monthly": "~+15.21%",
-        "value": 17.65,
-        "dailyChange": -4.13,
-        "weeklyChange": 2.14,
-        "monthlyChange": 15.21,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "down",
-        "category": "Volatility"
-      },
-      {
-        "indicator": "WTI",
-        "latest": "70.23/bbl",
-        "daily": "+1.44%",
-        "weekly": "~-6.13%",
-        "monthly": "~-19.61%",
-        "value": 70.23,
-        "dailyChange": 1.44,
-        "weeklyChange": -6.13,
-        "monthlyChange": -19.61,
-        "dailyUnit": "%",
-        "weeklyUnit": "%",
-        "monthlyUnit": "%",
-        "direction": "up",
-        "category": "Commodities"
-      }
-    ],
-    "dailyK": [
-      {
-        "key": "usd",
-        "indicator": "DXY",
-        "date": "2026-06-26",
-        "open": 101.5,
-        "high": 101.57,
-        "low": 101.05,
-        "close": 101.36
-      },
-      {
-        "key": "jpy",
-        "indicator": "USDJPY",
-        "date": "2026-06-29",
-        "open": 161.76,
-        "high": 161.96,
-        "low": 161.72,
-        "close": 161.79
-      },
-      {
-        "key": "gold",
-        "indicator": "Gold",
-        "date": "2026-06-26",
-        "open": 4078.7,
-        "high": 4078.7,
-        "low": 4078.7,
-        "close": 4078.7
-      },
-      {
-        "key": "japanEquities",
-        "indicator": "Nikkei225",
-        "date": "2026-06-29",
-        "open": 69609.88,
-        "high": 69609.88,
-        "low": 67997.57,
-        "close": 69468.11
-      },
-      {
-        "key": "usEquities",
-        "indicator": "S&P500",
-        "date": "2026-06-26",
-        "open": 7312.74,
-        "high": 7392.95,
-        "low": 7294.18,
-        "close": 7354.02
-      }
-    ],
-    "events": [
-      {
-        "date": "2026-07-01",
-        "event": "BOJ Tankan（6 月調查）",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-01",
-        "event": "Warsh 於 ECB Forum 公開對談",
-        "importanceLabel": "⭐⭐",
-        "importance": 2
-      },
-      {
-        "date": "2026-07-02",
-        "event": "美國 6 月 NFP / Employment Situation",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-08",
-        "event": "FOMC 6 月會議紀要",
-        "importanceLabel": "⭐⭐",
-        "importance": 2
-      },
-      {
-        "date": "2026-07-14",
-        "event": "美國 6 月 CPI",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-24",
-        "event": "日本 6 月全國 CPI",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-28 至 2026-07-29",
-        "event": "FOMC 會議",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-30",
-        "event": "BOJ 政策會議與展望報告",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      },
-      {
-        "date": "2026-07-30",
-        "event": "美國 6 月 PCE",
-        "importanceLabel": "⭐⭐⭐",
-        "importance": 3
-      }
-    ],
-    "assetStance": {
-      "usd": "看多",
-      "jpy": "看空",
-      "gold": "看空",
-      "japanEquities": "中性",
-      "usEquities": "看多"
-    },
-    "assetDecisionMeta": {
-      "usd": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
-        "trigger": "",
-        "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
-      },
-      "jpy": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
-        "trigger": "",
-        "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
-      },
-      "gold": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
-        "trigger": "",
-        "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
-      },
-      "japanEquities": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
-        "trigger": "",
-        "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
-      },
-      "usEquities": {
-        "message": "",
-        "priceStructure": "",
-        "volume": "",
-        "trigger": "",
-        "invalidation": "",
-        "confidence": "",
-        "status": "缺資料"
-      }
-    },
-    "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`看多`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `2026-06-25 的 PCE 再次支撐 Warsh Fed 的 higher-for-longer，而 BOJ 在 2026-06-24 至 2026-06-26 的新訊號仍只夠支撐慢速正常化；在利差優勢沒有被破壞前，美元仍是最乾淨的主線資產。`",
-    "markdown": "# Daily《宏觀投資雷達報告》\n\n日期：2026-06-30\n時區：Asia/Taipei\n\n註：\n- 本報告截稿時間為 `2026-06-30 08:02 CST`，對應 `2026-06-30 00:02 UTC / 2026-06-29 20:02 EDT / 2026-06-30 09:02 JST`。\n- 本報告優先使用最近 7 天（`2026-06-23` 至 `2026-06-30`）公開可驗證資訊；若最近 7 天沒有新的官方政策訊號，則沿用最近一次官方會議或官方數據，並明確標註日期。\n- 這是週二亞洲早盤版本。`DXY`、`USDJPY`、`EURJPY`、`Gold`、`Silver`、`WTI` 採截稿前最新電子盤或外匯報價；`S&P500`、`Nasdaq100`、`VIX` 採 `2026-06-29` 美國盤中最新；`US10Y`、`US2Y` 採美國財政部官網 `2026-06-29` 最新可得殖利率；`Nikkei225` 採 `2026-06-29` 日本最新完整收盤；`TOPIX` 採 `JPX` `2026-06-30` 早盤即時值。\n- `TOPIX` 的週/月變化以 `1348.T` proxy 近似，故以 `~` 標示；跨資產週/月變化若採 5 個交易日與約 1 個月近似，亦以 `~` 標示。\n- `JP10Y` 與文中 `JP2Y` 採日本財務省 `2026-06-26` 最新可得 `jgbcme.csv`；截至截稿時，`2026-06-29` 的 JGB 官方 CSV 尚未更新。\n- 最近 7 天 Fed 沒有新的 `FOMC`、`Warsh` 或 `Powell` 主席級政策轉向發言；Fed 段落因此以 `2026-06-25` 的 `PCE` 和 `2026-06-17` 的 FOMC 基準作延伸。BOJ 段落則以 `2026-06-24` Summary of Opinions、`2026-06-25` Tamura 講話與 `2026-06-26` 東京 CPI 為主。\n\n## 先回答七個核心問題\n\n1. 現在市場最主要交易的敘事是什麼？\n   `現在最主要被交易的敘事，是「5 月 PCE 讓 Warsh Fed 的 higher-for-longer 繼續成立，美元主線沒有被破壞；但美股在上週去擁擠後出現選擇性反彈，顯示風險偏好沒有消失，只是更集中在能承受高利率的美國大型股，而日圓仍繼續扮演 funding currency。」`\n\n2. 美元接下來 3 個月偏強還偏弱？\n   `偏強。`\n\n3. 日圓接下來 3 個月偏升還偏貶？\n   `偏貶。`\n\n4. 黃金接下來 3 個月偏漲還偏跌？\n   `偏跌。`\n\n5. 日股接下來 3 個月偏漲還偏跌？\n   `偏盤整。`\n\n6. 美股是否處於風險偏好階段？\n   `是，但屬於窄幅、選擇性的 risk-on，不是全面擴散式風險偏好。`\n\n7. 哪個市場最可能率先出現趨勢反轉？\n   `USD/JPY，因為它同時承載美日利差、日本官方干預風險，以及槓桿資金偏擁擠的日圓空頭。`\n\n## 第一部分：市場快照\n\n| 指標 | 最新 | 日變化 | 週變化 | 月變化 |\n|---|---:|---:|---:|---:|\n| DXY | 101.16 | -0.20% | ~+0.13% | ~+2.27% |\n| USDJPY | 161.94 | +0.10% | ~+0.23% | ~+1.45% |\n| EURJPY | 184.91 | +0.39% | ~+0.16% | ~-0.45% |\n| US10Y | 4.38% | 0bps | -13bps | -7bps |\n| US2Y | 4.10% | +3bps | -14bps | +12bps |\n| JP10Y | 2.61% | -3bps | -7bps | -5bps |\n| Gold | 4,028/oz | -1.24% | ~-3.68% | ~-11.67% |\n| Silver | 58.84/oz | -0.65% | ~-10.21% | ~-22.19% |\n| Nikkei225 | 69,468.11 | +0.15% | ~-3.99% | ~+3.79% |\n| TOPIX | 4,008.43 | +0.66% | ~-2.61% | ~+1.36% |\n| S&P500 | 7,440.43 | +1.18% | ~-0.43% | ~-1.84% |\n| Nasdaq100 | 29,774.75 | +2.25% | ~-1.89% | ~-1.84% |\n| VIX | 17.65 | -4.13% | ~+2.14% | ~+15.21% |\n| WTI | 70.23/bbl | +1.44% | ~-6.13% | ~-19.61% |\n\n快照解讀：\n- `美元仍強、US2Y` 仍在 `4%` 上方，代表市場沒有把最新通膨資料翻譯成「很快降息」。\n- 但 `S&P500`、`Nasdaq100` 在 `2026-06-29` 盤中明顯反彈、`VIX` 回落，說明市場也沒有轉成全面 risk-off；更準確的說法是 `higher-for-longer 下的 selective risk-on`。\n- `Gold`、`Silver`、`WTI` 的週/月方向仍偏弱，說明市場當前沒有把宏觀主線押在新一輪通膨失控或地緣政治全面升級。\n\n## 前一交易日日K\n\n| 資產 | 指標 | 日期 | 開盤 | 最高 | 最低 | 收盤 |\n|---|---|---:|---:|---:|---:|---:|\n| 美元 | DXY | 2026-06-26 | 101.50 | 101.57 | 101.05 | 101.36 |\n| 日圓 | USDJPY | 2026-06-29 | 161.76 | 161.96 | 161.72 | 161.79 |\n| 黃金 | Gold | 2026-06-26 | 4078.70 | 4078.70 | 4078.70 | 4078.70 |\n| 日股 | Nikkei225 | 2026-06-29 | 69609.88 | 69609.88 | 67997.57 | 69468.11 |\n| 美股 | S&P500 | 2026-06-26 | 7312.74 | 7392.95 | 7294.18 | 7354.02 |\n\n## 第二部分：資金流向判斷\n\n目前資金流向排序：\n\n1. 美元  \n   `這仍是最乾淨的主線。2026-06-25 的 PCE 沒有打開提早降息空間，而 BOJ 的正常化速度仍遠慢於 Fed 的利差優勢消化速度。`\n\n2. 美股  \n   2026-06-29 美國盤中反彈很明確，`Nasdaq100` 上漲超過 `2%`、`VIX` 下跌超過 `4%`，代表上週的 AI 去擁擠並沒有變成結構性 risk-off，而是資金重新回到大型成長股與高品質資產。\n\n3. 美債  \n   美債不是今天最強的交易，但仍在吸收防守型配置。`US10Y` 沒有重新上衝，說明市場在 higher-for-longer 不變下，仍願意持有部分 duration。\n\n4. 日股  \n   `日本股票沒有失速，但更多是相對價值與選股市場，而不是全球資金的唯一主戰場。銀行、出口股與 AI 供應鏈各自有邏輯，整體趨勢卻不夠乾淨。`\n\n5. 黃金  \n   `黃金仍有央行買盤底盤，但在強美元與高實質利率環境下，它不是主流資金的第一承接池。`\n\n6. 日圓  \n   `日圓仍是 funding currency，不是吸金資產。價格沒有形成趨勢性升值，部位上槓桿資金也沒有明顯去空。`\n\n一句話總結：  \n`現在不是全面避險，也不是全面狂熱，而是「美元做核心、股票做選擇性回補、日圓繼續被拿來融資」。`\n\n## 第三部分：聯準會分析\n\n最近 7 天（`2026-06-23` 至 `2026-06-30`）官方與準官方關鍵資訊：\n- Fed 最近 7 天沒有新的 `FOMC`，也沒有新的 `Warsh` 或 `Powell` 主席級政策轉向發言；`Powell` 本身也已非主席。\n- 因此本週 Fed 判讀的核心新增證據，仍是 `2026-06-25` BEA 的 `Personal Income and Outlays`。其中 `5 月 PCE` 年增 `4.1%`、月增 `0.4%`；`核心 PCE` 年增 `3.4%`、月增 `0.3%`。\n- 最近一次正式政策基準仍是 `2026-06-17` FOMC：利率維持 `3.50%` 到 `3.75%`，SEP 年底政策利率中位數仍在 `3.8%`。\n- Fed 日曆顯示下一個真正能改變敘事的硬事件，是 `2026-07-08` FOMC 紀要與 `2026-07-28` 至 `2026-07-29` FOMC 會議；在這之前，市場大概率仍以 `PCE + 利差` 為主線。\n\n判斷：\n- 利率方向：`按兵不動，但更久維持高利率。`\n- 點陣圖方向：`偏鷹。` `3.8%` 的年底中位數在最新 PCE 之後沒有被削弱。\n- 通膨觀點：`偏黏。` 最新 PCE 沒有提供提早降息的空間。\n- 就業觀點：`仍有韌性。` 最近 7 天沒有新的官方就業惡化訊號逼 Fed 轉向。\n\nFed Hawkish Score：`8/10`\n\n理由：\n- 最近 7 天沒有新的鴿派政策訊號。\n- 最新落地資料 `2026-06-25 PCE` 反而強化了 `higher-for-longer`。\n\n## 第四部分：日本央行分析\n\n最近 7 天關鍵資訊：\n- `2026-06-24` BOJ 的 `Summary of Opinions at the Monetary Policy Meeting on June 15 and 16, 2026` 顯示，委員會仍把 underlying CPI 上行風險視為重要議題，且維持後續升息與縮表討論空間。\n- `2026-06-25` 審議委員 `Tamura` 表示，若經濟與物價按展望發展，BOJ 需穩步調整寬鬆程度；這延續的是 gradual normalization，而不是激進緊縮。\n- `2026-06-26` 東京 CPI 初值顯示：headline `1.7%`、core ex-fresh `1.6%`、core-core `1.9%`，皆高於前月。\n- 最近 7 天沒有新的 `Ueda` 公開講話，因此 BOJ 的即時判讀主要由 `Summary of Opinions + Tamura + Tokyo CPI` 組成。\n\n判斷：\n- 升息機率：`未來 3 個月再升一次的機率約 35% 到 40%。`\n- 縮表進度：`維持漸進。` 既有路徑仍指向 `2027-04` 起月購債量約 `2 兆日圓`。\n- 工資成長：`方向仍支持正常化，但最近 7 天沒有新的工資數據把 BOJ 推向更激進區間。`\n- 通膨變化：`東京 CPI 回升支持 gradual normalization，但不足以打破美元利差主線。`\n\nBOJ Hawkish Score：`7/10`\n\n理由：\n- BOJ 沒有退回鴿派。\n- 但市場仍把 BOJ 理解為慢速正常化，而不是連續升息週期。\n\n## 第五部分：黃金分析\n\n黃金近期偏弱的主因，仍是 `Fed 更久維持高利率` 壓過其他利多。六個因子依重要性排序如下：\n\n1. 降息預期  \n   `最重要，而且目前對黃金最不利。5 月 PCE 把「很快降息」往後推。`\n\n2. 通膨  \n   `通膨沒有消失，但市場先把它翻譯成更高利率更久，而不是直接買黃金。`\n\n3. 央行買盤  \n   `它仍是中期底盤，所以金價轉弱卻沒有演變成失控式下殺。`\n\n4. 避險需求  \n   `有，但不夠強。若真正由避險主導，黃金不會在月內明顯輸給美元。`\n\n5. 地緣政治  \n   `邊際影響下降，因為油價月跌接近 `20%`，代表風險溢價仍在回吐。`\n\n6. 美元走弱  \n   `這個因子目前不存在；實際情況是美元偏強。`\n\n結論：\n- 黃金仍有央行買盤與次級避險支撐，但短線定價權不在它手上。\n- 只要 `DXY` 仍在 `101` 上方、Fed 不轉鴿，我對未來 3 個月維持 `偏跌`。\n\n## 第六部分：日圓分析\n\n目前日圓強弱主要受三個變數影響：\n\n1. 美日 2 年利差  \n   目前約為 `4.10% - 1.41% = 2.69%`，前端利差仍明顯偏向美元。\n\n2. 美日 10 年利差  \n   目前約為 `4.38% - 2.61% = 1.77%`，長端利差也沒有收斂到足以支持趨勢性日圓升值。\n\n3. BOJ 升息預期  \n   東京 CPI 回升讓 BOJ 再升息不至於被市場完全拿掉，但市場仍把 BOJ 視為慢速正常化。\n\n未來 3 個月判斷：`貶值`\n\n信心：`63/100`\n\n理由：\n- 利差仍明顯偏美元。\n- `USD/JPY` 仍在 `161` 上方。\n- 我不把信心拉更高，因為越接近 `162`，日本官方干預風險越高。\n\n## 第七部分：Carry Trade 監控\n\n最近 7 天檢查結果：\n- 沒有被確認的全面 `carry trade unwind`。\n- 也沒有已成形的 `yen short squeeze`。\n- `CFTC Traders in Financial Futures` 截至 `2026-06-23` 顯示，`Leveraged Funds` 在日圓上為 `90,764` 口多單、`187,856` 口空單，淨空約 `97,092` 口；相較前一週不是 reduction，反而是擁擠度略升。\n- 最近 7 天更接近事實的敘事，是 `官方干預警戒升高`，不是 `carry 已自發性瓦解`。\n\nCarry Trade 風險：`高`\n\n判斷：\n- 部位面：槓桿資金仍明顯淨空日圓。\n- 價格面：`USD/JPY` 沒有出現 short squeeze 式急跌。\n- 政策面：日本官方對 `160-162` 區間的容忍度顯然變低。\n\n## 第八部分：日股分析\n\n重點公司追蹤（以 `2026-06-29` 日本市場最新完整收盤為主）：\n\n| 公司 | 最新 | 日變化 | 解讀 |\n|---|---:|---:|---|\n| Toyota | ¥2,772 | +0.14% | 弱日圓仍支持出口獲利，但上漲斜率已明顯放慢。 |\n| Sony | ¥3,299 | +3.13% | 反映市場願意回補高品質大型股，但不是全面科技狂熱。 |\n| Nintendo | ¥6,935 | +5.25% | 個股與產品週期成分高，反彈強，但不代表整體日股風險偏好全面回來。 |\n| Mitsubishi UFJ | ¥3,211 | -1.05% | BOJ 正常化仍利多銀行利差，但短線已不是無差別買進。 |\n| Tokyo Electron | ¥74,700 | +2.44% | AI capex 長線沒壞，但短線仍屬高波動、易去擁擠板塊。 |\n| Fast Retailing | ¥84,380 | +0.37% | 權值穩定，但難單獨帶出整體日本市場的單邊行情。 |\n\n三條主線判斷：\n- 出口股是否受惠日圓：`是，但邊際效益下降。`\n- 銀行股是否受惠升息：`是，但市場已部分提前交易，短線不再線性反映。`\n- AI 相關是否受惠全球資本支出：`中長線是，但短線進入高波動去擁擠。`\n\n未來 3 個月判斷：`盤整`\n\n信心：`59/100`\n\n理由：\n- `弱日圓 + 銀行利差修復 + 治理改革` 仍在。\n- 但全球 AI 擁擠交易降溫、`USD/JPY` 干預風險，以及 BOJ 緩慢正常化，都讓日股難維持單邊順風。\n\n## 第九部分：風險雷達\n\n| 日期 | 事件 | 重要度 |\n|---|---|---|\n| 2026-07-01 | BOJ Tankan（6 月調查） | ⭐⭐⭐ |\n| 2026-07-01 | Warsh 於 ECB Forum 公開對談 | ⭐⭐ |\n| 2026-07-02 | 美國 6 月 NFP / Employment Situation | ⭐⭐⭐ |\n| 2026-07-08 | FOMC 6 月會議紀要 | ⭐⭐ |\n| 2026-07-14 | 美國 6 月 CPI | ⭐⭐⭐ |\n| 2026-07-24 | 日本 6 月全國 CPI | ⭐⭐⭐ |\n| 2026-07-28 至 2026-07-29 | FOMC 會議 | ⭐⭐⭐ |\n| 2026-07-30 | BOJ 政策會議與展望報告 | ⭐⭐⭐ |\n| 2026-07-30 | 美國 6 月 PCE | ⭐⭐⭐ |\n\n## 第十部分：投資決策\n\n- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`看多`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `2026-06-25 的 PCE 再次支撐 Warsh Fed 的 higher-for-longer，而 BOJ 在 2026-06-24 至 2026-06-26 的新訊號仍只夠支撐慢速正常化；在利差優勢沒有被破壞前，美元仍是最乾淨的主線資產。`\n\n## 來源\n\n- [Federal Reserve: FOMC statement, 2026-06-17](https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm)\n- [Federal Reserve: Summary of Economic Projections, 2026-06-17](https://www.federalreserve.gov/monetarypolicy/files/fomcprojtabl20260617.pdf)\n- [Federal Reserve: FOMC calendars](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)\n- [Federal Reserve: Kevin Warsh bio page](https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm)\n- [BEA: Personal Income and Outlays, May 2026](https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026)\n- [Bank of Japan: Summary of Opinions at the Monetary Policy Meeting on June 15 and 16, 2026](https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260616.pdf)\n- [Bank of Japan: Speech by Board Member Tamura, 2026-06-25](https://www.boj.or.jp/en/about/press/koen_2026/ko260625a.htm)\n- [Bank of Japan: Release schedule](https://www.boj.or.jp/en/about/calendar/index.htm)\n- [Statistics Bureau of Japan: CPI release schedule](https://www.stat.go.jp/english/data/cpi/1582.html)\n- [Statistics Bureau of Japan: Tokyo CPI June 2026 release page](https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html)\n- [U.S. Treasury: Daily Treasury Par Yield Curve Rates](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=2026&type=daily_treasury_yield_curve)\n- [Ministry of Finance Japan: JGB current CSV](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv)\n- [Ministry of Finance Japan: JGB historical CSV](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/historical/jgbcme_all.csv)\n- [CFTC: Traders in Financial Futures, Leveraged Funds](https://www.cftc.gov/dea/futures/financial_lf.htm)\n- [FRED: Nikkei Stock Average, Japan](https://fred.stlouisfed.org/series/NIKKEI225)\n- [JPX: TOPIX feed](https://www.jpx.co.jp/market/indices/e_indices_stock_price3.txt)\n"
-  },
   "reports": [
+    {
+      "filename": "macro-radar-daily-2026-07-01.md",
+      "title": "Daily《宏觀投資雷達報告》",
+      "date": "2026-07-01",
+      "summary": "Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。",
+      "coreQuestions": {
+        "marketNarrative": "Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。",
+        "usd3m": "偏強。DXY 仍在 101 上方，US2Y 回到 4.14%，價格與利差都未否定美元多頭。",
+        "jpy3m": "偏貶。USDJPY 已到 162.6 附近，但因干預風險升高，日圓看空信心不再上調。",
+        "gold3m": "偏跌。金價仍在 4,020 附近弱勢盤整，沒有重新突破，也沒有獲得美元或實質利率確認。",
+        "japanEquities3m": "盤整。Tankan 與 TOPIX 支撐基本面，但 Nikkei 日線未確認新高，且 USDJPY 干預風險限制追多。",
+        "usEquitiesRisk": "是，但仍是集中式 risk-on。Nasdaq100 週線轉強、VIX 回落，支持美股看多但不是全面 beta 擴散。",
+        "firstReversal": "USDJPY。它同時有利差順風、槓桿日圓空頭擁擠與日本官方干預風險。"
+      },
+      "snapshot": [
+        {
+          "indicator": "DXY",
+          "latest": "101.24",
+          "daily": "+0.12%",
+          "weekly": "~-0.17%",
+          "monthly": "~+2.35%",
+          "value": 101.24,
+          "dailyChange": 0.12,
+          "weeklyChange": -0.17,
+          "monthlyChange": 2.35,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "FX"
+        },
+        {
+          "indicator": "USDJPY",
+          "latest": "162.66",
+          "daily": "+0.45%",
+          "weekly": "~+0.65%",
+          "monthly": "~+1.89%",
+          "value": 162.66,
+          "dailyChange": 0.45,
+          "weeklyChange": 0.65,
+          "monthlyChange": 1.89,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "FX"
+        },
+        {
+          "indicator": "EURJPY",
+          "latest": "185.64",
+          "daily": "+0.40%",
+          "weekly": "~+0.95%",
+          "monthly": "~-0.06%",
+          "value": 185.64,
+          "dailyChange": 0.4,
+          "weeklyChange": 0.95,
+          "monthlyChange": -0.06,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "FX"
+        },
+        {
+          "indicator": "US10Y",
+          "latest": "4.44%",
+          "daily": "+6bps",
+          "weekly": "-6bps",
+          "monthly": "-1bp",
+          "value": 4.44,
+          "dailyChange": 6,
+          "weeklyChange": -6,
+          "monthlyChange": -1,
+          "dailyUnit": "bps",
+          "weeklyUnit": "bps",
+          "monthlyUnit": "",
+          "direction": "up",
+          "category": "Rates"
+        },
+        {
+          "indicator": "US2Y",
+          "latest": "4.14%",
+          "daily": "+4bps",
+          "weekly": "-2bps",
+          "monthly": "+16bps",
+          "value": 4.14,
+          "dailyChange": 4,
+          "weeklyChange": -2,
+          "monthlyChange": 16,
+          "dailyUnit": "bps",
+          "weeklyUnit": "bps",
+          "monthlyUnit": "bps",
+          "direction": "up",
+          "category": "Rates"
+        },
+        {
+          "indicator": "JP10Y",
+          "latest": "2.64%",
+          "daily": "+3bps",
+          "weekly": "-4bps",
+          "monthly": "-4bps",
+          "value": 2.64,
+          "dailyChange": 3,
+          "weeklyChange": -4,
+          "monthlyChange": -4,
+          "dailyUnit": "bps",
+          "weeklyUnit": "bps",
+          "monthlyUnit": "bps",
+          "direction": "up",
+          "category": "Rates"
+        },
+        {
+          "indicator": "Gold",
+          "latest": "4,020.0/oz",
+          "daily": "-0.06%",
+          "weekly": "~-2.66%",
+          "monthly": "~-11.85%",
+          "value": 4020,
+          "dailyChange": -0.06,
+          "weeklyChange": -2.66,
+          "monthlyChange": -11.85,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "down",
+          "category": "Commodities"
+        },
+        {
+          "indicator": "Silver",
+          "latest": "58.90/oz",
+          "daily": "+1.24%",
+          "weekly": "~-5.04%",
+          "monthly": "~-22.11%",
+          "value": 58.9,
+          "dailyChange": 1.24,
+          "weeklyChange": -5.04,
+          "monthlyChange": -22.11,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "Commodities"
+        },
+        {
+          "indicator": "Nikkei225",
+          "latest": "70,062.32",
+          "daily": "+0.86%",
+          "weekly": "~-3.17%",
+          "monthly": "~+4.67%",
+          "value": 70062.32,
+          "dailyChange": 0.86,
+          "weeklyChange": -3.17,
+          "monthlyChange": 4.67,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "Equities"
+        },
+        {
+          "indicator": "TOPIX",
+          "latest": "4,028.05",
+          "daily": "+0.83%",
+          "weekly": "~+0.86%",
+          "monthly": "~+2.18%",
+          "value": 4028.05,
+          "dailyChange": 0.83,
+          "weeklyChange": 0.86,
+          "monthlyChange": 2.18,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "Equities"
+        },
+        {
+          "indicator": "S&P500",
+          "latest": "7,499.36",
+          "daily": "+0.79%",
+          "weekly": "~+1.82%",
+          "monthly": "~-1.06%",
+          "value": 7499.36,
+          "dailyChange": 0.79,
+          "weeklyChange": 1.82,
+          "monthlyChange": -1.06,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "Equities"
+        },
+        {
+          "indicator": "Nasdaq100",
+          "latest": "30,276.35",
+          "daily": "+1.68%",
+          "weekly": "~+3.17%",
+          "monthly": "~-0.19%",
+          "value": 30276.35,
+          "dailyChange": 1.68,
+          "weeklyChange": 3.17,
+          "monthlyChange": -0.19,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "up",
+          "category": "Equities"
+        },
+        {
+          "indicator": "VIX",
+          "latest": "16.45",
+          "daily": "-6.80%",
+          "weekly": "~-15.60%",
+          "monthly": "~+7.38%",
+          "value": 16.45,
+          "dailyChange": -6.8,
+          "weeklyChange": -15.6,
+          "monthlyChange": 7.38,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "down",
+          "category": "Volatility"
+        },
+        {
+          "indicator": "WTI",
+          "latest": "70.11/bbl",
+          "daily": "-0.90%",
+          "weekly": "~-4.23%",
+          "monthly": "~-19.75%",
+          "value": 70.11,
+          "dailyChange": -0.9,
+          "weeklyChange": -4.23,
+          "monthlyChange": -19.75,
+          "dailyUnit": "%",
+          "weeklyUnit": "%",
+          "monthlyUnit": "%",
+          "direction": "down",
+          "category": "Commodities"
+        }
+      ],
+      "dailyK": [
+        {
+          "key": "usd",
+          "indicator": "DXY",
+          "date": "2026-06-30",
+          "open": 101.22,
+          "high": 101.24,
+          "low": 101.22,
+          "close": 101.24
+        },
+        {
+          "key": "jpy",
+          "indicator": "USDJPY",
+          "date": "2026-07-01",
+          "open": 162.55,
+          "high": 162.67,
+          "low": 162.49,
+          "close": 162.66
+        },
+        {
+          "key": "gold",
+          "indicator": "Gold",
+          "date": "2026-06-30",
+          "open": 4025,
+          "high": 4032,
+          "low": 4018.4,
+          "close": 4020
+        },
+        {
+          "key": "japanEquities",
+          "indicator": "Nikkei225",
+          "date": "2026-06-29",
+          "open": 69609.88,
+          "high": 69609.88,
+          "low": 67997.57,
+          "close": 69468.11
+        },
+        {
+          "key": "usEquities",
+          "indicator": "S&P500",
+          "date": "2026-06-30",
+          "open": 7441.27,
+          "high": 7508.29,
+          "low": 7438.04,
+          "close": 7499.36
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-07-01",
+          "event": "Warsh 於 ECB Forum 公開對談；截至截稿尚未落地",
+          "importanceLabel": "⭐⭐",
+          "importance": 2
+        },
+        {
+          "date": "2026-07-01",
+          "event": "美國 6 月 ISM 製造業",
+          "importanceLabel": "⭐⭐",
+          "importance": 2
+        },
+        {
+          "date": "2026-07-02",
+          "event": "美國 6 月 NFP / 失業率 / Employment Situation",
+          "importanceLabel": "⭐⭐⭐",
+          "importance": 3
+        },
+        {
+          "date": "2026-07-08",
+          "event": "FOMC 6 月會議紀要",
+          "importanceLabel": "⭐⭐",
+          "importance": 2
+        },
+        {
+          "date": "2026-07-14",
+          "event": "美國 6 月 CPI",
+          "importanceLabel": "⭐⭐⭐",
+          "importance": 3
+        },
+        {
+          "date": "2026-07-15",
+          "event": "美國 6 月 PPI",
+          "importanceLabel": "⭐⭐",
+          "importance": 2
+        },
+        {
+          "date": "2026-07-24",
+          "event": "日本 6 月全國 CPI",
+          "importanceLabel": "⭐⭐⭐",
+          "importance": 3
+        },
+        {
+          "date": "2026-07-28 至 2026-07-29",
+          "event": "FOMC 會議",
+          "importanceLabel": "⭐⭐⭐",
+          "importance": 3
+        },
+        {
+          "date": "2026-07-30",
+          "event": "BOJ 政策會議與展望報告",
+          "importanceLabel": "⭐⭐⭐",
+          "importance": 3
+        }
+      ],
+      "assetStance": {
+        "usd": "看多",
+        "jpy": "看空",
+        "gold": "看空",
+        "japanEquities": "中性",
+        "usEquities": "看多"
+      },
+      "assetDecisionMeta": {
+        "usd": {
+          "message": "沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據",
+          "priceStructure": "DXY 仍在 101 上方，未跌破美元多頭防線",
+          "volume": "US2Y 在 4.14%，前端利率確認美元利差",
+          "trigger": "DXY 放量突破 101.8 或 NFP 強於預期",
+          "invalidation": "DXY 跌破 100.8 且 US2Y 跌破 4.0%",
+          "confidence": "68。",
+          "status": "確認"
+        },
+        "jpy": {
+          "message": "BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差",
+          "priceStructure": "USDJPY 升至 162.6，日圓仍弱",
+          "volume": "CFTC 槓桿資金仍約 9.7 萬口日圓淨空，carry 未 unwind",
+          "trigger": "USDJPY 站穩 162.7 且無干預升級",
+          "invalidation": "日本官方干預或 USDJPY 單日跌破 160.8",
+          "confidence": "62。",
+          "status": "確認"
+        },
+        "gold": {
+          "message": "美元與前端利率仍壓制黃金",
+          "priceStructure": "金價仍在 4,080-4,100 壓力下方",
+          "volume": "銀價週/月仍弱，沒有貴金屬同步確認",
+          "trigger": "金價跌破 3,990 且 DXY 維持 101 上方",
+          "invalidation": "金價收復 4,100 且 US2Y 明顯下行",
+          "confidence": "64。",
+          "status": "未確認"
+        },
+        "japanEquities": {
+          "message": "Tankan 改善、TOPIX 盤中上行支撐日股",
+          "priceStructure": "TOPIX 偏強，但 Nikkei 完整日線未確認新高",
+          "volume": "USDJPY > 162 支撐出口盈利但也提高干預風險，訊號互相抵消",
+          "trigger": "TOPIX 站穩 4,030 且 Nikkei 完整日線突破 70,500",
+          "invalidation": "USDJPY 急跌或 Nasdaq100 反轉跌破 6/30 低位",
+          "confidence": "60。",
+          "status": "未確認"
+        },
+        "usEquities": {
+          "message": "沒有新數據推翻 growth resilience，AI 主線仍在",
+          "priceStructure": "S&P500 收在 7,499、Nasdaq100 收在 30,276，短線向上",
+          "volume": "VIX 跌至 16.45，波動率確認 risk-on",
+          "trigger": "S&P500 站穩 7,500 且 Nasdaq100 延續強於 S&P500",
+          "invalidation": "NFP/ISM 觸發 growth scare，或 S&P500 跌破 7,400",
+          "confidence": "66。",
+          "status": "確認"
+        }
+      },
+      "investmentDecision": "結論：`美元看多、日圓看空、黃金看空、日股中性、美股看多`。相較前次 Daily 與 Decision Update，主立場不變；新增 Tankan 只強化日股下檔，不足以升級。\n\n- 美元：`看多`。消息面：沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據；價格結構：`DXY` 仍在 `101` 上方，未跌破美元多頭防線；量能/替代量能：`US2Y` 在 `4.14%`，前端利率確認美元利差；觸發條件：`DXY` 放量突破 `101.8` 或 NFP 強於預期；失效條件：`DXY` 跌破 `100.8` 且 `US2Y` 跌破 `4.0%`；信心：`68`。\n- 日圓：`看空`。消息面：BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差；價格結構：`USDJPY` 升至 `162.6`，日圓仍弱；量能/替代量能：CFTC 槓桿資金仍約 `9.7` 萬口日圓淨空，carry 未 unwind；觸發條件：`USDJPY` 站穩 `162.7` 且無干預升級；失效條件：日本官方干預或 `USDJPY` 單日跌破 `160.8`；信心：`62`。\n- 黃金：`看空`。消息面：美元與前端利率仍壓制黃金；價格結構：金價仍在 `4,080-4,100` 壓力下方；量能/替代量能：銀價週/月仍弱，沒有貴金屬同步確認；觸發條件：金價跌破 `3,990` 且 DXY 維持 `101` 上方；失效條件：金價收復 `4,100` 且 `US2Y` 明顯下行；信心：`64`。\n- 日股：`中性`。消息面：Tankan 改善、TOPIX 盤中上行支撐日股；價格結構：TOPIX 偏強，但 Nikkei 完整日線未確認新高；量能/替代量能：`USDJPY > 162` 支撐出口盈利但也提高干預風險，訊號互相抵消；觸發條件：TOPIX 站穩 `4,030` 且 Nikkei 完整日線突破 `70,500`；失效條件：`USDJPY` 急跌或 Nasdaq100 反轉跌破 6/30 低位；信心：`60`。\n- 美股：`看多`。消息面：沒有新數據推翻 growth resilience，AI 主線仍在；價格結構：`S&P500` 收在 `7,499`、`Nasdaq100` 收在 `30,276`，短線向上；量能/替代量能：`VIX` 跌至 `16.45`，波動率確認 risk-on；觸發條件：S&P500 站穩 `7,500` 且 Nasdaq100 延續強於 S&P500；失效條件：NFP/ISM 觸發 growth scare，或 S&P500 跌破 `7,400`；信心：`66`。\n\n品質自檢：\n- 未把尚未公布的 Warsh ECB Forum、ISM、NFP 寫成既成事實。\n- 五大資產均同時檢查消息面、價格結構與量能/替代量能。\n- 截稿時間、資料時點與混合市場日期已列明。\n- Dashboard 必要表格已包含：市場快照、前一交易日日K、投資決策。\n- 最後一句已保留。\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `Fed higher-for-longer 尚未被新資料推翻，US2Y 與 DXY 仍確認利差優勢，而日圓、黃金與日股都受制於干預風險或量價未確認。`",
+      "markdown": "# Daily《宏觀投資雷達報告》\n\n日期：2026-07-01\n時區：Asia/Taipei\n\n註：\n- 本報告截稿時間為 `2026-07-01 08:05 CST`，對應 `2026-07-01 00:05 UTC / 2026-06-30 20:05 EDT / 2026-07-01 09:05 JST`。\n- 本報告優先使用最近 7 天（`2026-06-24` 至 `2026-07-01`）公開可驗證資訊；若沒有足以改變立場的新證據，沿用前次判斷並明確標註。\n- 這是週三亞洲早盤版本。`DXY`、`Gold`、`Silver`、`WTI` 採 Yahoo Finance `2026-06-30` 最新日線；`USDJPY`、`EURJPY` 採 `2026-07-01` 亞洲早盤最新外匯報價；`S&P500`、`Nasdaq100`、`VIX` 採 `2026-06-30` 美國現貨收盤；`US10Y`、`US2Y` 採美國財政部 `2026-06-30` 最新殖利率；`JP10Y` 與文中 `JP2Y` 採日本財務省 `2026-06-29` 最新可得 JGB CSV；`TOPIX` 採 JPX `2026-07-01` 盤中官方值。\n- `Nikkei225` 免費可靠日線仍以 `2026-06-29` 完整收盤為主；同時參考 Yahoo meta 中 `2026-06-30` 的 `70,062.32` 報價，但不把缺少完整 5m 序列的盤中資料硬寫成正式日K。\n- 最近 7 天 Fed 沒有新的 FOMC 或主席級利率路徑訊號；Fed 段落沿用 `2026-06-25` PCE 與 `2026-06-17` FOMC 基準。BOJ 段落新增 `2026-07-01` Tankan：大型製造業 DI 改善、企業匯率假設上修，但仍不構成快速升息訊號。\n\n## 先回答七個核心問題\n\n1. 市場主敘事：`Warsh Fed higher-for-longer 沒被新資料推翻，美元與前端利率仍是主軸；同時美股延續 AI 集中式 risk-on，日圓仍是 funding currency。`\n2. 美元 3M：`偏強。DXY 仍在 101 上方，US2Y 回到 4.14%，價格與利差都未否定美元多頭。`\n3. 日圓 3M：`偏貶。USDJPY 已到 162.6 附近，但因干預風險升高，日圓看空信心不再上調。`\n4. 黃金 3M：`偏跌。金價仍在 4,020 附近弱勢盤整，沒有重新突破，也沒有獲得美元或實質利率確認。`\n5. 日股 3M：`盤整。Tankan 與 TOPIX 支撐基本面，但 Nikkei 日線未確認新高，且 USDJPY 干預風險限制追多。`\n6. 美股風險偏好：`是，但仍是集中式 risk-on。Nasdaq100 週線轉強、VIX 回落，支持美股看多但不是全面 beta 擴散。`\n7. 最可能先反轉市場：`USDJPY。它同時有利差順風、槓桿日圓空頭擁擠與日本官方干預風險。`\n\n## 第一部分：市場快照\n\n| 指標 | 最新 | 日變化 | 週變化 | 月變化 |\n|---|---:|---:|---:|---:|\n| DXY | 101.24 | +0.12% | ~-0.17% | ~+2.35% |\n| USDJPY | 162.66 | +0.45% | ~+0.65% | ~+1.89% |\n| EURJPY | 185.64 | +0.40% | ~+0.95% | ~-0.06% |\n| US10Y | 4.44% | +6bps | -6bps | -1bp |\n| US2Y | 4.14% | +4bps | -2bps | +16bps |\n| JP10Y | 2.64% | +3bps | -4bps | -4bps |\n| Gold | 4,020.0/oz | -0.06% | ~-2.66% | ~-11.85% |\n| Silver | 58.90/oz | +1.24% | ~-5.04% | ~-22.11% |\n| Nikkei225 | 70,062.32 | +0.86% | ~-3.17% | ~+4.67% |\n| TOPIX | 4,028.05 | +0.83% | ~+0.86% | ~+2.18% |\n| S&P500 | 7,499.36 | +0.79% | ~+1.82% | ~-1.06% |\n| Nasdaq100 | 30,276.35 | +1.68% | ~+3.17% | ~-0.19% |\n| VIX | 16.45 | -6.80% | ~-15.60% | ~+7.38% |\n| WTI | 70.11/bbl | -0.90% | ~-4.23% | ~-19.75% |\n\n快照解讀：\n- 價格結構沒有推翻前次主線：`DXY > 101`、`US2Y > 4%`、`USDJPY > 162`，美元利差交易仍有效。\n- 美股量價替代訊號改善：`S&P500`、`Nasdaq100` 連續反彈，`VIX` 跌至 `16.45`，支持「集中式 risk-on」。\n- 黃金仍未形成反轉確認；銀價單日反彈，但週/月仍弱，不能單靠單日反彈改成看多。\n\n## 前一交易日日K\n\n| 資產 | 指標 | 日期 | 開盤 | 最高 | 最低 | 收盤 |\n|---|---|---:|---:|---:|---:|---:|\n| 美元 | DXY | 2026-06-30 | 101.22 | 101.24 | 101.22 | 101.24 |\n| 日圓 | USDJPY | 2026-07-01 | 162.55 | 162.67 | 162.49 | 162.66 |\n| 黃金 | Gold | 2026-06-30 | 4,025.0 | 4,032.0 | 4,018.4 | 4,020.0 |\n| 日股 | Nikkei225 | 2026-06-29 | 69,609.88 | 69,609.88 | 67,997.57 | 69,468.11 |\n| 美股 | S&P500 | 2026-06-30 | 7,441.27 | 7,508.29 | 7,438.04 | 7,499.36 |\n\n## 第二部分：資金流向判斷\n\n目前資金流向排序：`美元 > 美股 > 美債 > 日股 > 黃金 > 日圓`。\n\n相較前次判斷，排序不變。原因是新增資料沒有推翻三件事：第一，美元仍有前端利率支撐；第二，美股價格與波動率確認 risk-on；第三，日圓雖然因 162 以上干預風險升高，但價格尚未出現急跌或 carry unwind。\n\n## 第三部分：聯準會分析\n\n最近 7 天足以影響利率路徑的新增資訊有限。Fed 官網最新新聞多為監管與銀行壓力測試，沒有新的 FOMC 決議或主席級政策轉向；最近一個真正影響定價的官方資料仍是 `2026-06-25` BEA PCE。\n\n判斷：沿用前次判斷，未見足以改變立場的新證據。`2026-07-02` NFP 與 `2026-07-08` FOMC 紀要才是下一批可能改變利率路徑的資料。\n\nFed Hawkish Score：`8/10`\n\n理由：`US2Y` 最新在 `4.14%`，市場沒有把 Fed 重新定價成快速降息；但因 NFP 尚未公布，不上調分數。\n\n## 第四部分：日本央行分析\n\n新增資料是 `2026-07-01` BOJ Tankan。大型製造業 DI 從 `17` 升至 `22`，大型非製造業 DI 從 `36` 升至 `37`，大型企業整體 DI 從 `27` 升至 `29`；企業對 FY2026 美元兌日圓假設上修到約 `152.57`，顯示企業已把弱日圓納入預算。\n\n判斷：Tankan 支持 BOJ gradual normalization，但不是快速升息訊號。價格面上 `USDJPY` 仍在 162 以上，代表市場不認為 BOJ 足以單獨逆轉利差。\n\nBOJ Hawkish Score：`7/10`\n\n理由：Tankan 改善讓 BOJ 不需要轉鴿，但東京 CPI 與 Tankan 組合仍不足以把 BOJ 推成連續快速升息。\n\n## 第五部分：黃金分析\n\n沿用前次判斷，未見足以改變立場的新證據。美元仍在 `101` 上方，`US2Y` 仍在 `4%` 上方，黃金最新收在約 `4,020`，低於 6 月中旬高位，價格結構沒有重新轉強。\n\n黃金的利多仍是央行買盤與避險底盤；但量價確認不足，因為價格沒有突破 `4,080-4,100` 壓力，且銀價週/月趨勢仍弱。結論維持未來 3 個月 `偏跌`。\n\n## 第六部分：日圓分析\n\n美日 2 年利差約 `4.14% - 1.41% = 2.73%`；美日 10 年利差約 `4.44% - 2.64% = 1.80%`。利差比前次略偏美元，`USDJPY` 也升到 `162.6` 附近。\n\n未來 3 個月判斷：`貶值`\n\n信心：`62/100`\n\n理由：利差與價格仍支持日圓偏弱；但 `USDJPY > 162` 已進入官方干預敏感區，若出現日本財務省口頭升級或單日急跌，日圓看空需立刻降級。\n\n## 第七部分：Carry Trade 監控\n\n`CFTC Traders in Financial Futures` 最新截至 `2026-06-23`：Leveraged Funds 日圓多單 `90,764` 口、空單 `187,856` 口，淨空約 `97,092` 口。部位仍擁擠，但不是已 unwind。\n\nCarry Trade 風險：`高`\n\n判斷：\n- 部位面：槓桿資金仍大幅淨空日圓。\n- 價格面：`USDJPY` 沒有出現急跌，反而站上 `162`。\n- 風險面：真正的風險不是自然 unwind 已發生，而是官方干預或美國就業數據轉弱觸發短 squeeze。\n\n## 第八部分：日股分析\n\n新增 Tankan 與 JPX TOPIX 盤中值對日股偏正面：大型企業景氣判斷改善，`TOPIX` 盤中約 `4,028`、日漲 `0.83%`。但這仍不足以把日股從中性升級為看多，因為 `Nikkei225` 完整日線未確認新高，且 `USDJPY > 162` 的干預風險會壓抑出口股追價。\n\n未來 3 個月判斷：`盤整`\n\n信心：`60/100`\n\n理由：弱日圓、Tankan 改善與治理改革支撐下檔；但全球 AI 集中交易、BOJ 正常化與干預風險限制上檔。\n\n## 第九部分：風險雷達\n\n| 日期 | 事件 | 重要度 |\n|---|---|---|\n| 2026-07-01 | Warsh 於 ECB Forum 公開對談；截至截稿尚未落地 | ⭐⭐ |\n| 2026-07-01 | 美國 6 月 ISM 製造業 | ⭐⭐ |\n| 2026-07-02 | 美國 6 月 NFP / 失業率 / Employment Situation | ⭐⭐⭐ |\n| 2026-07-08 | FOMC 6 月會議紀要 | ⭐⭐ |\n| 2026-07-14 | 美國 6 月 CPI | ⭐⭐⭐ |\n| 2026-07-15 | 美國 6 月 PPI | ⭐⭐ |\n| 2026-07-24 | 日本 6 月全國 CPI | ⭐⭐⭐ |\n| 2026-07-28 至 2026-07-29 | FOMC 會議 | ⭐⭐⭐ |\n| 2026-07-30 | BOJ 政策會議與展望報告 | ⭐⭐⭐ |\n\n## 第十部分：投資決策\n\n結論：`美元看多、日圓看空、黃金看空、日股中性、美股看多`。相較前次 Daily 與 Decision Update，主立場不變；新增 Tankan 只強化日股下檔，不足以升級。\n\n- 美元：`看多`。消息面：沿用前次判斷，未見足以改變 Fed higher-for-longer 的新證據；價格結構：`DXY` 仍在 `101` 上方，未跌破美元多頭防線；量能/替代量能：`US2Y` 在 `4.14%`，前端利率確認美元利差；觸發條件：`DXY` 放量突破 `101.8` 或 NFP 強於預期；失效條件：`DXY` 跌破 `100.8` 且 `US2Y` 跌破 `4.0%`；信心：`68`。\n- 日圓：`看空`。消息面：BOJ Tankan 改善但仍是 gradual normalization，不足以對沖 Fed 利差；價格結構：`USDJPY` 升至 `162.6`，日圓仍弱；量能/替代量能：CFTC 槓桿資金仍約 `9.7` 萬口日圓淨空，carry 未 unwind；觸發條件：`USDJPY` 站穩 `162.7` 且無干預升級；失效條件：日本官方干預或 `USDJPY` 單日跌破 `160.8`；信心：`62`。\n- 黃金：`看空`。消息面：美元與前端利率仍壓制黃金；價格結構：金價仍在 `4,080-4,100` 壓力下方；量能/替代量能：銀價週/月仍弱，沒有貴金屬同步確認；觸發條件：金價跌破 `3,990` 且 DXY 維持 `101` 上方；失效條件：金價收復 `4,100` 且 `US2Y` 明顯下行；信心：`64`。\n- 日股：`中性`。消息面：Tankan 改善、TOPIX 盤中上行支撐日股；價格結構：TOPIX 偏強，但 Nikkei 完整日線未確認新高；量能/替代量能：`USDJPY > 162` 支撐出口盈利但也提高干預風險，訊號互相抵消；觸發條件：TOPIX 站穩 `4,030` 且 Nikkei 完整日線突破 `70,500`；失效條件：`USDJPY` 急跌或 Nasdaq100 反轉跌破 6/30 低位；信心：`60`。\n- 美股：`看多`。消息面：沒有新數據推翻 growth resilience，AI 主線仍在；價格結構：`S&P500` 收在 `7,499`、`Nasdaq100` 收在 `30,276`，短線向上；量能/替代量能：`VIX` 跌至 `16.45`，波動率確認 risk-on；觸發條件：S&P500 站穩 `7,500` 且 Nasdaq100 延續強於 S&P500；失效條件：NFP/ISM 觸發 growth scare，或 S&P500 跌破 `7,400`；信心：`66`。\n\n品質自檢：\n- 未把尚未公布的 Warsh ECB Forum、ISM、NFP 寫成既成事實。\n- 五大資產均同時檢查消息面、價格結構與量能/替代量能。\n- 截稿時間、資料時點與混合市場日期已列明。\n- Dashboard 必要表格已包含：市場快照、前一交易日日K、投資決策。\n- 最後一句已保留。\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `Fed higher-for-longer 尚未被新資料推翻，US2Y 與 DXY 仍確認利差優勢，而日圓、黃金與日股都受制於干預風險或量價未確認。`\n\n## 來源\n\n- [Federal Reserve: FOMC calendars](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)\n- [Federal Reserve: News & Events](https://www.federalreserve.gov/newsevents.htm)\n- [Federal Reserve: Speeches](https://www.federalreserve.gov/newsevents/speeches.htm)\n- [BEA: Personal Income and Outlays, May 2026](https://www.bea.gov/news/2026/personal-income-and-outlays-may-2026)\n- [U.S. Treasury: Daily Treasury Rates CSV](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve)\n- [Bank of Japan: Tankan Summary, June 2026](https://www.boj.or.jp/en/statistics/tk/yoshi/tk2606.htm)\n- [Bank of Japan: Tankan Summary PDF, June 2026](https://www.boj.or.jp/en/statistics/tk/gaiyo/2026/tka2606.pdf)\n- [Ministry of Finance Japan: JGB current CSV](https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv)\n- [JPX: Main stock index real-time feed](https://www.jpx.co.jp/market/indices/e_indices_stock_price3.txt)\n- [CFTC: Traders in Financial Futures, Leveraged Funds](https://www.cftc.gov/dea/futures/financial_lf.htm)\n- [Yahoo Finance: Market chart API](https://query1.finance.yahoo.com/v8/finance/chart/)\n"
+    },
     {
       "filename": "macro-radar-decision-2026-06-30.md",
       "title": "Decision Update《宏觀投資雷達》",
@@ -1082,49 +1482,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.26% / ~-0.24% / ~+1.98%。",
+          "volume": "以市場快照作替代量能；最新值 101.16。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.56% / ~+0.56% / ~+1.98%。",
+          "volume": "以市場快照作替代量能；最新值 162.51。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-0.22% / ~-2.62% / ~-10.13%。",
+          "volume": "以市場快照作替代量能；最新值 4,021.8/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：+0.86% / ~-3.17% / ~+4.67%。",
+          "volume": "以市場快照作替代量能；最新值 70,062.32。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.82% / ~+1.82% / ~-1.32%。",
+          "volume": "以市場快照作替代量能；最新值 7,499.36。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看多`。只要 `DXY` 維持在 `101` 上方、且 `US2Y` 沒有快速跌破 `4%`，主線仍是順勢持有；失效條件是 `NFP / ISM` 明顯轉弱並同步打掉前端利率。\n- 日圓：`看空`。只要 `USDJPY` 仍站在 `160` 上方，日圓仍是 funding currency；失效條件是日本官方干預或美國硬數據突然轉弱，觸發 `USDJPY` 急跌。\n- 黃金：`看空`。只要美元與前端利率不鬆，黃金較像反彈賣點；失效條件是 `DXY` 失守 `100` 或市場轉成真正避險模式。\n- 日股：`中性`。日本仍有弱日圓與全球 risk-on 支撐，但目前不是最乾淨的主線；失效條件是 `USDJPY` 急跌或美股 AI 主線失速。\n- 美股：`看多`。`Nasdaq100` 與 `VIX` 組合仍偏向集中式 risk-on；失效條件是 `ISM / NFP` 顯著低於預期，讓市場把敘事從 growth resilience 切成 growth scare。",
@@ -1482,49 +1882,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.20% / ~+0.13% / ~+2.27%。",
+          "volume": "以市場快照作替代量能；最新值 101.16。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.10% / ~+0.23% / ~+1.45%。",
+          "volume": "以市場快照作替代量能；最新值 161.94。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-1.24% / ~-3.68% / ~-11.67%。",
+          "volume": "以市場快照作替代量能；最新值 4,028/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：+0.15% / ~-3.99% / ~+3.79%。",
+          "volume": "以市場快照作替代量能；最新值 69,468.11。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.18% / ~-0.43% / ~-1.84%。",
+          "volume": "以市場快照作替代量能；最新值 7,440.43。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`看多`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `2026-06-25 的 PCE 再次支撐 Warsh Fed 的 higher-for-longer，而 BOJ 在 2026-06-24 至 2026-06-26 的新訊號仍只夠支撐慢速正常化；在利差優勢沒有被破壞前，美元仍是最乾淨的主線資產。`",
@@ -1870,49 +2270,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.01% / ~+0.50% / ~+2.15%。",
+          "volume": "以市場快照作替代量能；最新值 101.35。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：-0.04% / ~+0.19% / ~+1.55%。",
+          "volume": "以市場快照作替代量能；最新值 161.74。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-0.05% / ~-2.6% / ~-10.7%。",
+          "volume": "以市場快照作替代量能；最新值 4,077/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：-4.15% / ~-2.65% / ~+7.21%。",
+          "volume": "以市場快照作替代量能；最新值 69,360.88。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-0.05% / ~-1.95% / ~-2.21%。",
+          "volume": "以市場快照作替代量能；最新值 7,354.02。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`中性`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `2026-06-25 的 PCE 再次支撐 Warsh Fed 的 higher-for-longer，而 BOJ 在 2026-06-24 至 2026-06-26 的新訊號仍只夠支撐慢速正常化；在利差優勢沒有被破壞前，美元仍是最乾淨的主線資產。`",
@@ -2206,49 +2606,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.06% / ~+0.51% / ~+2.17%。",
+          "volume": "以市場快照作替代量能；最新值 101.37。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：-0.05% / ~+0.18% / ~+1.54%。",
+          "volume": "以市場快照作替代量能；最新值 161.73。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：+1.80% / ~-2.87% / ~-7.75%。",
+          "volume": "以市場快照作替代量能；最新值 4,103/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：-4.15% / ~-2.65% / ~+7.21%。",
+          "volume": "以市場快照作替代量能；最新值 69,360.88。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-0.05% / ~-1.95% / ~-2.21%。",
+          "volume": "以市場快照作替代量能；最新值 7,354.02。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`中性`\n\n如果只能持有一種資產未來90天，我會選擇 `美元`，因為 `最新 PCE 讓 Warsh Fed 的 higher-for-longer 繼續成立，而 BOJ 即使在東京 CPI 回升後也仍只能慢速正常化；在利差優勢沒有被破壞前，美元仍是最乾淨的主線資產。`",
@@ -2542,49 +2942,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.09% / ~+1.42% / ~+2.36%。",
+          "volume": "以市場快照作替代量能；最新值 101.51。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.03% / ~+0.33% / ~+1.41%。",
+          "volume": "以市場快照作替代量能；最新值 161.82。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：+0.94% / ~-7.59% / ~-10.50%。",
+          "volume": "以市場快照作替代量能；最新值 4,028/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：-0.88% / ~-1.04% / ~+6.43%。",
+          "volume": "以市場快照作替代量能；最新值 69,174.97。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-0.01% / ~-0.84% / ~-2.15%。",
+          "volume": "以市場快照作替代量能；最新值 7,357.49。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`中性`",
@@ -2890,49 +3290,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：+0.20% / ~+2.08% / ~+2.30%。",
+          "volume": "以市場快照作替代量能；最新值 101.61。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.09% / ~+0.72% / ~+1.57%。",
+          "volume": "以市場快照作替代量能；最新值 161.75。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-2.53% / ~-7.06% / ~-10.96%。",
+          "volume": "以市場快照作替代量能；最新值 4,025.3/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：-0.88% / ~-1.04% / ~+6.43%。",
+          "volume": "以市場快照作替代量能；最新值 69,174.97。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-0.10% / ~-2.04% / ~-1.54%。",
+          "volume": "以市場快照作替代量能；最新值 7,358.22。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`中性`",
@@ -3238,49 +3638,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：+0.27% / ~+2.15% / ~+2.51%。",
+          "volume": "以市場快照作替代量能；最新值 101.68。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.07% / ~+0.79% / ~+1.73%。",
+          "volume": "以市場快照作替代量能；最新值 161.68。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-1.77% / ~-6.33% / ~-10.64%。",
+          "volume": "以市場快照作替代量能；最新值 4,056.9/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "Nikkei225 日/週/月變化：-0.88% / ~-1.04% / ~+6.16%。",
+          "volume": "以市場快照作替代量能；最新值 69,174.97。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-1.44% / -2.50% / ~-0.91%。",
+          "volume": "以市場快照作替代量能；最新值 7,365.46。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`中性`\n- 美股：`中性`",
@@ -3586,49 +3986,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.00% / ~+1.27% / ~+1.93%。",
+          "volume": "以市場快照作替代量能；最新值 101.02。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.03% / ~+0.84% / ~+1.65%。",
+          "volume": "以市場快照作替代量能；最新值 161.57。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：+0.09% / ~-0.20% / ~-7.17%。",
+          "volume": "以市場快照作替代量能；最新值 4,206.6/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+0.28% / +7.92% / +15.51%。",
+          "volume": "以市場快照作替代量能；最新值 71,250.06。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：-0.37% / +0.56% / +0.54%。",
+          "volume": "以市場快照作替代量能；最新值 7,472.79。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`看多`\n- 美股：`看多`",
@@ -3934,49 +4334,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：+0.00% / ~+1.10% / ~+1.67%。",
+          "volume": "以市場快照作替代量能；最新值 100.85。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.11% / ~+0.95% / ~+1.59%。",
+          "volume": "以市場快照作替代量能；最新值 161.47。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-1.49% / ~-1.27% / ~-8.34%。",
+          "volume": "以市場快照作替代量能；最新值 4,161.3/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+1.93% / +10.95% / +15.51%。",
+          "volume": "以市場快照作替代量能；最新值 71,250.06。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.08% / +1.44% / +2.00%。",
+          "volume": "以市場快照作替代量能；最新值 7,500.58。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`看多`\n- 美股：`看多`",
@@ -4276,49 +4676,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：-0.11% / ~+0.99% / ~+1.67%。",
+          "volume": "以市場快照作替代量能；最新值 100.74。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：-0.04% / ~+0.66% / ~+1.47%。",
+          "volume": "以市場快照作替代量能；最新值 161.28。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-1.72% / ~-1.56% / ~-8.67%。",
+          "volume": "以市場快照作替代量能；最新值 4,172.9/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+1.93% / +10.95% / +19.14%。",
+          "volume": "以市場快照作替代量能；最新值 71,250.06。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.08% / +1.44% / +2.00%。",
+          "volume": "以市場快照作替代量能；最新值 7,500.58。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`看多`\n- 美股：`看多`\n\n如果只能持有一種資產未來90天，我會選擇 `日股`，因為 `Fed 的鷹派把美元維持在強勢區，但 BOJ 的正常化仍偏漸進，日本同時保留弱日圓、銀行利差修復、AI 資本支出與油價回落四條順風，這是目前最完整、也最不需要宏觀劇本大幅修正的多頭組合。`",
@@ -4606,49 +5006,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：+0.75% / ~+0.98% / +1.89%。",
+          "volume": "以市場快照作替代量能；最新值 100.84。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.41% / ~+0.70% / +1.50%。",
+          "volume": "以市場快照作替代量能；最新值 161.25。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-3.50% / ~+2.84% / -7.60%。",
+          "volume": "以市場快照作替代量能；最新值 4,206.5/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：強烈看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+1.65% / ~+10.71% / +17.35%。",
+          "volume": "以市場快照作替代量能；最新值 71,053。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.09% / ~+1.44% / +2.00%。",
+          "volume": "以市場快照作替代量能；最新值 7,500.58。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`強烈看多`\n- 美股：`看多`",
@@ -4942,49 +5342,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "DXY 日/週/月變化：+0.82% / ~+0.50% / +1.06%。",
+          "volume": "以市場快照作替代量能；最新值 100.36。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.10% / ~+0.03% / +1.08%。",
+          "volume": "以市場快照作替代量能；最新值 160.58。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "Gold 日/週/月變化：-0.87% / ~+4.97% / -4.72%。",
+          "volume": "以市場快照作替代量能；最新值 4,293.4/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：強烈看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+0.72% / ~+8.9% / +14.94%。",
+          "volume": "以市場快照作替代量能；最新值 69,902。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：中性。",
+          "priceStructure": "S&P500 日/週/月變化：-1.21% / ~+2.1% / +0.23%。",
+          "volume": "以市場快照作替代量能；最新值 7,420.10。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "未確認"
         }
       },
       "investmentDecision": "- 美元：`看多`\n- 日圓：`看空`\n- 黃金：`看空`\n- 日股：`強烈看多`\n- 美股：`中性`",
@@ -5284,49 +5684,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "DXY 日/週/月變化：+0.04% / ~-0.5% / +0.37%。",
+          "volume": "以市場快照作替代量能；最新值 99.58。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "USDJPY 日/週/月變化：-0.15% / ~-0.1% / -0.87%。",
+          "volume": "以市場快照作替代量能；最新值 160.19。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Gold 日/週/月變化：-0.04% / ~+0.8% / -5.20%。",
+          "volume": "以市場快照作替代量能；最新值 4,329.63/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+0.72% / ~+5.6% / +14.79%。",
+          "volume": "以市場快照作替代量能；最新值 69,902。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+0.09% / ~+3.8% / +1.62%。",
+          "volume": "以市場快照作替代量能；最新值 7,518。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看空`\n- 日圓：`看多`\n- 黃金：`看多`\n- 日股：`看多`\n- 美股：`看多`",
@@ -5608,49 +6008,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "DXY 日/週/月變化：-0.1% / -0.3% / +0.4%。",
+          "volume": "以市場快照作替代量能；最新值 99.64。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "USDJPY 日/週/月變化：+0.2% / +0.1% / +1.2%。",
+          "volume": "以市場快照作替代量能；最新值 160.33。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "背離"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Gold 日/週/月變化：+1.0% / +2.6% / -4.0%。",
+          "volume": "以市場快照作替代量能；最新值 4,372.4/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：強烈看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+5.1% / +6.1% / +13.0%。",
+          "volume": "以市場快照作替代量能；最新值 69,404.5。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.7% / +2.0% / +2.0%。",
+          "volume": "以市場快照作替代量能；最新值 7,554.29。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看空`\n- 日圓：`看多`\n- 黃金：`看多`\n- 日股：`強烈看多`\n- 美股：`看多`",
@@ -5944,49 +6344,49 @@ window.MACRO_RADAR_DATA = {
       },
       "assetDecisionMeta": {
         "usd": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看空。",
+          "priceStructure": "DXY 日/週/月變化：-0.3% / ~-0.4% / ~+1.0%。",
+          "volume": "以市場快照作替代量能；最新值 99.50。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "jpy": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "USDJPY 日/週/月變化：-0.1% / ~+0.1% / ~+2.0%。",
+          "volume": "以市場快照作替代量能；最新值 160.12。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "gold": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "Gold 日/週/月變化：+2.3% / ~flat / ~-8%。",
+          "volume": "以市場快照作替代量能；最新值 4,330/oz。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "japanEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：強烈看多。",
+          "priceStructure": "Nikkei225 日/週/月變化：+5.0% / ~+7% / ~+12%。",
+          "volume": "以市場快照作替代量能；最新值 69,317.5。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         },
         "usEquities": {
-          "message": "",
-          "priceStructure": "",
-          "volume": "",
+          "message": "第十部分未提供結構化消息面，沿用報告立場：看多。",
+          "priceStructure": "S&P500 日/週/月變化：+1.4% / ~+2% / ~+1%。",
+          "volume": "以市場快照作替代量能；最新值 7,400 上方（盤中）。",
           "trigger": "",
           "invalidation": "",
-          "confidence": "",
-          "status": "缺資料"
+          "confidence": "市場快照回填",
+          "status": "確認"
         }
       },
       "investmentDecision": "- 美元：`看空`\n- 日圓：`看多`\n- 黃金：`看多`\n- 日股：`強烈看多`\n- 美股：`看多`",
@@ -6159,6 +6559,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 101.24,
+        "latest": "101.24",
+        "dailyChange": 0.12,
+        "weeklyChange": -0.17,
+        "monthlyChange": 2.35,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "USDJPY": [
@@ -6323,6 +6734,17 @@ window.MACRO_RADAR_DATA = {
         "dailyChange": 0.56,
         "weeklyChange": 0.56,
         "monthlyChange": 1.98,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 162.66,
+        "latest": "162.66",
+        "dailyChange": 0.45,
+        "weeklyChange": 0.65,
+        "monthlyChange": 1.89,
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
@@ -6493,6 +6915,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 185.64,
+        "latest": "185.64",
+        "dailyChange": 0.4,
+        "weeklyChange": 0.95,
+        "monthlyChange": -0.06,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "US10Y": [
@@ -6660,6 +7093,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "bps",
         "weeklyUnit": "bps",
         "monthlyUnit": "bps"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 4.44,
+        "latest": "4.44%",
+        "dailyChange": 6,
+        "weeklyChange": -6,
+        "monthlyChange": -1,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": ""
       }
     ],
     "US2Y": [
@@ -6827,6 +7271,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "bps",
         "weeklyUnit": "bps",
         "monthlyUnit": "bps"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 4.14,
+        "latest": "4.14%",
+        "dailyChange": 4,
+        "weeklyChange": -2,
+        "monthlyChange": 16,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": "bps"
       }
     ],
     "JP10Y": [
@@ -6986,6 +7441,17 @@ window.MACRO_RADAR_DATA = {
       },
       {
         "date": "2026-06-30",
+        "value": 2.64,
+        "latest": "2.64%",
+        "dailyChange": 3,
+        "weeklyChange": -4,
+        "monthlyChange": -4,
+        "dailyUnit": "bps",
+        "weeklyUnit": "bps",
+        "monthlyUnit": "bps"
+      },
+      {
+        "date": "2026-07-01",
         "value": 2.64,
         "latest": "2.64%",
         "dailyChange": 3,
@@ -7161,6 +7627,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 4020,
+        "latest": "4,020.0/oz",
+        "dailyChange": -0.06,
+        "weeklyChange": -2.66,
+        "monthlyChange": -11.85,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "Silver": [
@@ -7328,6 +7805,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 58.9,
+        "latest": "58.90/oz",
+        "dailyChange": 1.24,
+        "weeklyChange": -5.04,
+        "monthlyChange": -22.11,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "Nikkei225": [
@@ -7487,6 +7975,17 @@ window.MACRO_RADAR_DATA = {
       },
       {
         "date": "2026-06-30",
+        "value": 70062.32,
+        "latest": "70,062.32",
+        "dailyChange": 0.86,
+        "weeklyChange": -3.17,
+        "monthlyChange": 4.67,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
         "value": 70062.32,
         "latest": "70,062.32",
         "dailyChange": 0.86,
@@ -7662,6 +8161,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 4028.05,
+        "latest": "4,028.05",
+        "dailyChange": 0.83,
+        "weeklyChange": 0.86,
+        "monthlyChange": 2.18,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "S&P500": [
@@ -7826,6 +8336,17 @@ window.MACRO_RADAR_DATA = {
         "dailyChange": 1.82,
         "weeklyChange": 1.82,
         "monthlyChange": -1.32,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 7499.36,
+        "latest": "7,499.36",
+        "dailyChange": 0.79,
+        "weeklyChange": 1.82,
+        "monthlyChange": -1.06,
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
@@ -7996,6 +8517,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 30276.35,
+        "latest": "30,276.35",
+        "dailyChange": 1.68,
+        "weeklyChange": 3.17,
+        "monthlyChange": -0.19,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "VIX": [
@@ -8163,6 +8695,17 @@ window.MACRO_RADAR_DATA = {
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 16.45,
+        "latest": "16.45",
+        "dailyChange": -6.8,
+        "weeklyChange": -15.6,
+        "monthlyChange": 7.38,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
       }
     ],
     "WTI": [
@@ -8327,6 +8870,17 @@ window.MACRO_RADAR_DATA = {
         "dailyChange": -2.63,
         "weeklyChange": -4.34,
         "monthlyChange": -24.01,
+        "dailyUnit": "%",
+        "weeklyUnit": "%",
+        "monthlyUnit": "%"
+      },
+      {
+        "date": "2026-07-01",
+        "value": 70.11,
+        "latest": "70.11/bbl",
+        "dailyChange": -0.9,
+        "weeklyChange": -4.23,
+        "monthlyChange": -19.75,
         "dailyUnit": "%",
         "weeklyUnit": "%",
         "monthlyUnit": "%"

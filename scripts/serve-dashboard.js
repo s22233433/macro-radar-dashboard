@@ -1,9 +1,10 @@
 const fs = require("node:fs");
 const http = require("node:http");
 const path = require("node:path");
-const { buildDataset, renderDataScript } = require("./report-data.js");
 
 const ROOT = path.resolve(__dirname, "..");
+const DATA_MODULE = path.resolve(__dirname, "report-data.js");
+const PARSER_MODULE = path.resolve(__dirname, "report-parser.js");
 const PORT = Number(process.env.PORT || 8765);
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -17,12 +18,13 @@ const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || "localhost"}`);
 
   if (url.pathname === "/api/reports-data") {
-    sendJson(res, buildDataset(ROOT));
+    sendJson(res, buildFreshDataset());
     return;
   }
 
   if (url.pathname === "/data/reports-data.js") {
-    send(res, 200, renderDataScript(buildDataset(ROOT)), "application/javascript; charset=utf-8");
+    const { renderDataScript } = freshDataApi();
+    send(res, 200, renderDataScript(buildFreshDataset()), "application/javascript; charset=utf-8");
     return;
   }
 
@@ -32,6 +34,16 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, "127.0.0.1", () => {
   console.log(`Macro Radar Dashboard: http://127.0.0.1:${PORT}`);
 });
+
+function freshDataApi() {
+  delete require.cache[DATA_MODULE];
+  delete require.cache[PARSER_MODULE];
+  return require(DATA_MODULE);
+}
+
+function buildFreshDataset() {
+  return freshDataApi().buildDataset(ROOT);
+}
 
 function serveStatic(pathname, res) {
   const cleanPath = decodeURIComponent(pathname === "/" ? "/index.html" : pathname);

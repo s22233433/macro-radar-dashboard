@@ -4,6 +4,7 @@ const fs = require("node:fs");
 const html = fs.readFileSync("index.html", "utf8");
 const app = fs.readFileSync("app.js", "utf8");
 const css = fs.readFileSync("styles.css", "utf8");
+const server = fs.readFileSync("scripts/serve-dashboard.js", "utf8");
 
 assert.match(html, /decision-panel/, "dashboard should include a top daily investment decision panel");
 assert.match(html, /dailyDecisionGrid/, "decision panel should render every report decision");
@@ -67,5 +68,8 @@ assert.match(css, /\.candle-tooltip/, "candlestick charts should style visible h
 assert.match(css, /\.candle-hitbox/, "candlestick charts should enlarge hover targets");
 assert.match(css, /\.price-asset-tabs/, "price trends should style shared chart asset tabs");
 assert.match(css, /\.shared-price-card/, "price trends should style one shared chart card");
+
+assert.match(server, /function freshDataApi/, "local server should refresh parser and data modules");
+assert.match(server, /delete require\.cache\[PARSER_MODULE\]/, "local server should not keep stale parser code");
 
 console.log("dashboard structure tests passed");
