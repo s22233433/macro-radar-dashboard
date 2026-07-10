@@ -177,6 +177,23 @@ assert.equal(compactReport.coreQuestions.firstReversal, "USDJPY。");
 assert.equal(compactReport.assetDecisionMeta.usd.status, "確認");
 assert.equal(compactReport.assetDecisionMeta.jpy.status, "確認");
 
+const decisionUpdateReport = parseReport(`# Decision Update《宏觀投資雷達》
+
+日期：2026-07-01
+
+## 第三部分：可執行投資決策
+
+- 美元：消息面與價格結構摘要，沒有 Dashboard 結構化欄位。
+
+## 第十部分：投資決策
+
+- 美元：\`看多\`。消息面：Fed higher-for-longer 未被推翻；價格結構：DXY 仍在 101 上方；量能/替代量能：US2Y 支撐利差；觸發條件：DXY 突破 101.8；失效條件：DXY 跌破 100.8；信心：\`69\`。
+`, "macro-radar-decision-2026-07-01.md");
+
+assert.equal(decisionUpdateReport.assetStance.usd, "看多");
+assert.equal(decisionUpdateReport.assetDecisionMeta.usd.message, "Fed higher-for-longer 未被推翻");
+assert.equal(decisionUpdateReport.assetDecisionMeta.usd.status, "確認");
+
 const sparseReport = parseReport(`# Daily《宏觀投資雷達報告》
 
 日期：2026-06-30

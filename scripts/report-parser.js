@@ -65,7 +65,7 @@
     const events = extractEvents(text);
     const assetStance = extractAssetStance(text);
     const assetDecisionMeta = fillMissingAssetDecisionMeta(extractAssetDecisionMeta(text), assetStance, snapshot);
-    const investmentDecision = extractSection(text, "投資決策");
+    const investmentDecision = extractInvestmentDecisionSection(text);
     const summary = coreQuestions.marketNarrative || firstParagraph(text);
 
     return {
@@ -187,7 +187,7 @@
   }
 
   function extractAssetStance(text) {
-    const section = extractSection(text, "投資決策");
+    const section = extractInvestmentDecisionSection(text);
     const result = {};
     if (!section) return result;
 
@@ -202,7 +202,7 @@
   }
 
   function extractAssetDecisionMeta(text) {
-    const section = extractSection(text, "投資決策");
+    const section = extractInvestmentDecisionSection(text);
     const result = defaultAssetDecisionMeta();
     if (!section) return result;
 
@@ -333,6 +333,10 @@
     const rest = text.slice(start);
     const next = rest.search(/\n##\s+/);
     return (next >= 0 ? rest.slice(0, next) : rest).trim();
+  }
+
+  function extractInvestmentDecisionSection(text) {
+    return extractSection(text, "第十部分：投資決策") || extractSection(text, "投資決策");
   }
 
   function parseFirstTable(section) {

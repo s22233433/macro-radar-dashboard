@@ -24,6 +24,7 @@ const TRACKED_INDICATORS = [
 function buildDataset(rootDir) {
   const root = path.resolve(rootDir);
   const reports = findMarkdownReports(root)
+    .filter((file) => !isDecisionReviewFile(file))
     .map((file) => {
       const markdown = fs.readFileSync(file, "utf8");
       const relative = path.relative(root, file).replace(/\\/g, "/");
@@ -72,6 +73,10 @@ function isReportFile(relativePath, fullPath) {
   } catch (_error) {
     return false;
   }
+}
+
+function isDecisionReviewFile(filePath) {
+  return /(^|\/)macro-radar-decision-review-\d{4}-\d{2}-\d{2}(?:-\d{4})?\.md$/i.test(filePath.replace(/\\/g, "/"));
 }
 
 function isWeekendDailyReport(report) {
@@ -132,6 +137,7 @@ module.exports = {
   buildTimeSeries,
   compareReports,
   findMarkdownReports,
+  isDecisionReviewFile,
   isWeekendDailyReport,
   isReportFile,
   reportRank,

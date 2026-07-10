@@ -72,7 +72,17 @@
 - `2026-07-01`: Dashboard 報告排序改用 `本報告截稿時間`，同日報告時間晚者在前；`每日投資決策` 預設為「日報」流，包含早版 Daily 與晚間 Decision Update，並用早版/晚間版不同標籤顏色區分。
 - `2026-07-01`: `node scripts/build-data.js` 會先刷新 `data/market-daily-k.json`，再重建 `data/reports-data.js`；若 Yahoo 日K暫時抓取失敗，只跳過 K 線更新並保留舊 dashboard data build。
 - `2026-07-01`: Dashboard 的 `每日投資決策` 會從 `第十部分：投資決策` 解析 `assetDecisionMeta`，並在五大資產格子顯示 `量價確認 / 量價未確認 / 量價背離 / 量價缺資料`；舊報告缺少消息面、價格結構、量能欄位時一律顯示 `量價缺資料`。
+- `2026-07-01`: Decision Update 若同時包含 `第三部分：可執行投資決策` 與 `第十部分：投資決策`，Dashboard parser 必須優先解析 `第十部分：投資決策`；已在 `scripts/report-parser.js` 加入 `extractInvestmentDecisionSection`，避免 assetDecisionMeta 誤抓第三部分而回填成 `未確認`。
 - `2026-07-01`: Dashboard 已上傳到獨立 private repo `s22233433/macro-radar-dashboard`；不得推到官網 repo `s22233433/s22233433.github.io`，除非使用者明確要求。
 - `2026-07-01`: 為了讓其他裝置可直接瀏覽，`s22233433/macro-radar-dashboard` 已改為 public 並啟用 GitHub Pages；線上網址為 `https://zhenguocool.com/macro-radar-dashboard/`。這是獨立 repo，不覆蓋官網首頁。
 - `2026-07-01`: Dashboard 排序必須以報告 `日期` 優先，同日期才用 `本報告截稿時間` 排序；不要讓歸檔在前一日的 Decision Update 因截稿時間日期較晚而插到新日期 Daily 前面。
 - `2026-07-01`: 本機 `scripts/serve-dashboard.js` 的 API 需每次刷新 `report-parser.js` / `report-data.js` require cache，否則 parser 修正後 `127.0.0.1:8765` 會繼續回舊資料，造成畫面看似沒更新。
+- `2026-07-03`: NFP 後若盤中 Treasury futures proxy 與官方 Fed H.15 / Treasury 收盤利率衝突，Daily 應優先用官方收盤利率校準 3M 立場；盤中 proxy 只能作為 Decision Update 的暫時判斷。
+- `2026-07-04`: 週六 Weekly 若碰上美國 `Independence Day observed` 後的混合口徑，應採 `美股/美債=7/2 美國完整收盤`、`FX/金銀油=7/3 完整交易`、`日本現貨=7/3 收盤`、`JGB=7/2 最新官方 CSV`，並在註記中明確寫出。
+- `2026-07-04`: 本週 Weekly 主線已從 `美元看多` 降級為 `美元中性、黃金看多、日圓中性偏升、日股中性、美股中性`；理由是弱 NFP 削弱美元加碼條件，但 `USDJPY` 與 `US2Y` 仍未確認全面 carry unwind / Fed 轉鴿。
+- `2026-07-04`: `CFTC financial_lf` 在本次 Weekly 執行時最新仍是 `positions as of 2026-06-23`，搭配 `USDJPY 161.34` 與 `VIX 15.81`，Carry Trade 風險維持 `高`，不能寫成已經 unwind。
+- `2026-07-04`: 產出 `macro-radar-weekly-2026-07-04.md` 後，`node scripts/build-data.js` 與 `node --test tests/*.test.js` 均通過；`data/reports-data.js` 的 `reportCount=22`，latest 為 `macro-radar-weekly-2026-07-04.md`。
+- `2026-07-04`: Weekly Decision Review 產物命名為 `macro-radar-decision-review-YYYY-MM-DD.md`，但 Dashboard 不適合把復盤當作 Daily/Decision/Weekly 決策流展示；`scripts/report-data.js` 會排除 `macro-radar-decision-review-*`，避免最新報告與決策矩陣出現空的 `未抽取` 資料。
+- `2026-07-07`: Daily 判斷需更新 CFTC `financial_lf` 至 `positions as of 2026-06-30`；Leveraged Funds 日圓多單 `87,437`、空單 `202,837`，淨空約 `115,400` 口。這提高 carry squeeze 燃料，但若 `USDJPY` 仍在 `162` 上方且 `VIX` 低於 `18`，只能維持 Carry Trade 風險 `高`，不可升為 `極高` 或寫成已 unwind。
+- `2026-07-08`: Daily 截稿在 FOMC minutes 發布前時，必須標為 `尚未公布`；本次官方 Treasury 最新為 `2026-07-07`：US2Y `4.19%`、US10Y `4.55%`，DXY 約 `101.11` 未站穩 `101.2`，Nikkei 跌破 `68,500` 但 USDJPY 未跌破 `160.8`，因此維持 `美元中性、日圓中性、黃金看多但降信心、日股中性、美股中性`。
+- `2026-07-08`: Decision Update 若 08:30 ET 無一線美國資料，仍要檢查早報觸發/失效位；本次盤面打到 USDJPY `162.5` 失效區且 Gold 跌破 `4,080`、Silver 同步轉弱，因此短報做 `小幅調整`：美元中性、日圓看空、黃金中性、日股中性、美股中性。若自動化實際執行已跨美股開盤，截稿註記必須明確寫出實際 EDT 時間。

@@ -156,6 +156,22 @@ fs.writeFileSync(
   "utf8"
 );
 fs.writeFileSync(
+  path.join(tempRoot, "macro-radar-decision-review-2026-06-20.md"),
+  [
+    "# Weekly Decision Review《宏觀投資雷達決策復盤》",
+    "",
+    "日期：2026-06-20",
+    "- 本報告截稿時間為 `2026-06-20 10:00 CST`。",
+    "",
+    "## 第一部分：本週決策摘要",
+    "",
+    "| 日期 | 類型 | 美元 | 日圓 | 黃金 | 日股 | 美股 |",
+    "|---|---|---|---|---|---|---|",
+    "| 2026-06-20 | Weekly | 中性 | 中性 | 中性 | 中性 | 中性 |",
+  ].join("\n"),
+  "utf8"
+);
+fs.writeFileSync(
   path.join(tempRoot, "AGENTS.md"),
   "# AGENTS.md\n\n这里提到 Daily《宏觀投資雷達報告》、先回答七個核心問題、日期：2026-06-18、市场快照，但它不是报告。\n",
   "utf8"
@@ -171,6 +187,7 @@ fs.writeFileSync(path.join(tempRoot, "data", "macro-radar-daily-2026-06-17.md"),
 const dataset = buildDataset(tempRoot);
 
 assert.equal(dataset.reportCount, 6);
+assert.equal(dataset.reports.some((report) => /decision-review/.test(report.filename)), false);
 assert.equal(dataset.latest.date, "2026-06-20");
 assert.equal(dataset.previous.date, "2026-06-17");
 assert.equal(dataset.timeSeries.DXY.length, 6);
